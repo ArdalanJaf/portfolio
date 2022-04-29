@@ -1,12 +1,58 @@
-$backgroundColor: rgb(255, 230, 90);
+$bgColor: rgb(255, 230, 90);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #root {
-    background-color: $backgroundColor;
-    height: 100vh;
+  background-color: $bgColor;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 5px;
+  border-bottom: solid 2px black;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.links {
+  display: flex;
+  a {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    svg {
+      fill: #000;
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.body {
+  padding: 10px;
+}
+
+.intro {
+}
+
+.iframeWrap {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+iframe {
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
 }

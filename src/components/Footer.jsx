@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function Footer() {
-    return (<footer>
-        <div>
-        terms & c's</div>
-        </footer>
-     );
+  return (
+    <footer>
+      <div>&copy; Ardalan Al-Jaf 2022</div>
+    </footer>
+  );
 }
 
 export default Footer;
