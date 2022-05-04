@@ -1,4 +1,4 @@
-$bgColor: #fff;
+$bgColor: rgb(255, 235, 217);
 
 * {
   margin: 0;
@@ -7,35 +7,27 @@ $bgColor: #fff;
 }
 
 #root {
-  background-color: $bgColor;
-  height: 100vh;
-  overflow: hidden;
+  //   background-color: $bgColor;
+  //   height: 100vh;
+  //   overflow: hidden;
 }
 
 .container {
-  height: 100vh;
-  width: 100vw;
-  //   max-width: 1200px;
-  //   margin: auto;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
-  }
+  max-width: 1180px;
+  margin: auto;
 }
 
 section {
+  border-bottom: dashed red 1px;
   height: 100vh;
-  width: 100vw;
-  scroll-snap-align: start;
+  width: 100%;
+  padding: 5%;
 }
 
 header {
   position: fixed;
   z-index: 1;
-  width: 100vw;
+  width: 100vw; //100%
   background-color: $bgColor;
   display: flex;
   justify-content: space-between;
@@ -54,7 +46,9 @@ header {
   a {
     display: flex;
     align-items: center;
-    margin-left: 5px;
+    &:nth-of-type(n + 2) {
+      margin-left: 5px;
+    }
     svg {
       fill: #000;
       height: 30px;
@@ -67,24 +61,84 @@ header {
       }
     }
   }
-}
-
-.body {
-  padding: 10px;
-}
-
-.intro {
-  padding-top: 50%;
-  padding-left: 5%;
-  h1 {
-    font-size: 30px;
-    margin-bottom: 2%;
+  .cv {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    div {
+      height: 100%;
+      //   width: 30px;
+      padding: 0 8px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .themeButton {
+    border-radius: 50%;
+    background-color: rgb(211, 121, 11);
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    margin-left: 10px;
   }
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+//INTRO
+.intro {
+  display: flex;
+  align-items: center;
+  h1 {
+    margin-bottom: 5px;
+  }
+}
+
+//PROJECTS
+.projectContainer {
+  display: flex;
+  gap: 10px;
+  height: 90%;
+  width: 100%;
+  margin: auto;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  //   -ms-overflow-style: none; /* IE and Edge */
+  //   scrollbar-width: none; /* Firefox */
+  //   &::-webkit-scrollbar {
+  //     display: none; /* Chrome, Safari and Opera */
+  //   }
+  //   position: relative;
+  //   border-radius: 10px;
+}
+
+.project {
+  scroll-snap-align: start;
+  flex: none;
+  //   height: 50%;
+  width: 100%;
+  //   background-color: cyan;
+  //   border: 1px dashed black;
+  //   text-align: center;
+  //   background-color: rgba(146, 146, 146, 0.356);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .iframeWrap {
-  width: 90%;
-  height: 500px;
+  width: 40%;
+  height: 70%;
   overflow: hidden;
 }
 
@@ -93,4 +147,30 @@ iframe {
   height: 200%;
   transform: scale(0.5);
   transform-origin: 0 0;
+}
+
+//ABOUT
+
+//CONTACT
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#name,
+#email,
+#message {
+  width: 100%;
+  padding: 5px;
+}
+
+// #name,
+// #email {
+//     margin
+// }
+
+#message {
+  max-height: 500px;
 }

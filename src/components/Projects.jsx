@@ -1,19 +1,20 @@
 import React from "react";
-
-
+import Project from "./Project";
+import { projects } from "../utils/projects";
 
 function Projects() {
-  const projects = [
-    {
-      name: blabla,
-      links: {git: blabla, site: blabla},
-      notes: blabla,
-    }
-  ]
-
   return (
-    {projects.forEach((project) => )}
+    <section className="projects">
+      {/* <div className="projects"> */}
+      <h2>PROJECTS</h2>
+      <div className="projectContainer">
+        {projects.map((project, index) => {
+          return <Project project={project} key={index} />;
+        })}
+      </div>
+      {/* </div> */}
+    </section>
   );
 }
 
-export default Project;
+export default Projects;
