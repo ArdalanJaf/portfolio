@@ -1,3 +1,6 @@
 export const types = {
-    EXAMPLE: "EXAMPLE", //example syntax + structure
-}
+  SET_FORM_DATA: "SET_FORM_DATA",
+  SET_JOI_ERRORS: "SET_JOI_ERRORS",
+  CLEAR_JOI_ERRORS: "CLEAR_JOI_ERRORS",
+  SET_SCROLL_POSITION: "SET_SCROLL_POSITION",
+};

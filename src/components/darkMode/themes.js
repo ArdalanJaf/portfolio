@@ -11,3 +11,5 @@ export const darkTheme = {
   toggleBorder: "#150A00",
   background: "#FFF0E2",
 };
+
+// All code taken and modified from https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/

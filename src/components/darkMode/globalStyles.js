@@ -22,3 +22,5 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.30s ease-in-out;
   }
   `;
+
+// All code taken and modified from https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/

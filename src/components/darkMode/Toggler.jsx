@@ -21,3 +21,5 @@ const Toggle = ({ theme, toggleTheme }) => {
 //   toggleTheme: func.isRequired,
 // };
 export default Toggle;
+
+// All code taken and modified from https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/

@@ -1,5 +1,5 @@
 import React from "react";
-import { icons } from "../utils/icons";
+import { icons } from "../config/icons";
 
 function Links() {
   return (

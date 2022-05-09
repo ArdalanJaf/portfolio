@@ -6,14 +6,8 @@ $bgColor: rgb(255, 235, 217);
   box-sizing: border-box;
 }
 
-#root {
-  //   background-color: $bgColor;
-  //   height: 100vh;
-  //   overflow: hidden;
-}
-
 .container {
-  max-width: 1180px;
+  max-width: 880px;
   margin: auto;
 }
 
@@ -173,4 +167,5 @@ iframe {
 
 #message {
   max-height: 500px;
+  font-family: arial;
 }

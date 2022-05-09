@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import { projects } from "../utils/projects";
+import { projects } from "../config/projects";
 
 function Projects() {
   return (

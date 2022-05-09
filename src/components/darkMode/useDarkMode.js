@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const setMode = (mode) => {
     window.localStorage.setItem("theme", mode);
@@ -19,4 +19,4 @@ export const useDarkMode = () => {
   return [theme, themeToggler];
 };
 
-// All code in darkMode folder taken and modified from https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/
+// All code taken and modified from https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/
