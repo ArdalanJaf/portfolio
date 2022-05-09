@@ -21,7 +21,6 @@ import Toggle from "./components/darkMode/Toggler";
 function App() {
   // const scrollPosition = useSelector((state) => state.scrollPosition);
   const dispatch = useDispatch();
-
   const [theme, themeToggler] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 

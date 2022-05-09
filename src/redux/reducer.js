@@ -27,6 +27,12 @@ export function reducer(state = initialState, action) {
       const results = { ...state, scrollPosition };
       return results;
     }
+    case types.SET_THEME: {
+      let theme = { ...state.theme };
+      theme = action.payload.theme;
+      const results = { ...state, theme };
+      return results;
+    }
     default:
       return state;
   }

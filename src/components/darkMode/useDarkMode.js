@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { types } from "../../redux/types";
 
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState("dark");
+  const theme = useSelector((state) => state.theme);
+  const dispatch = useDispatch();
 
   const setMode = (mode) => {
     window.localStorage.setItem("theme", mode);
-    setTheme(mode);
+    dispatch({ type: types.SET_THEME, payload: { theme: mode } });
   };
 
   const themeToggler = () => {
@@ -14,7 +17,8 @@ export const useDarkMode = () => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme");
-    localTheme && setTheme(localTheme);
+    localTheme &&
+      dispatch({ type: types.SET_THEME, payload: { theme: localTheme } });
   }, []);
   return [theme, themeToggler];
 };

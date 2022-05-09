@@ -6,4 +6,5 @@ export const initialState = {
   },
   joiErrors: {},
   scrollPosition: 0,
+  theme: "dark",
 };
