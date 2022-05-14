@@ -10,10 +10,8 @@ function About() {
           alt="me!"
         ></img>
         <p>
-          Hey I'm ardo... Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Laborum nostrum repudiandae nisi eum. Excepturi voluptas sequi
-          est pariatur unde suscipit magni doloremque, modi, repudiandae quaerat
-          deserunt quod optio hic porro.{" "}
+          Hello World! I'm Ardalan Al-Jaf, an aspiring Full-Stack Web-Developer
+          based in London.
         </p>
       </div>
     </section>

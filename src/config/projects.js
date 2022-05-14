@@ -1,20 +1,38 @@
 export const projects = [
   {
-    name: "FIND SPARKS",
+    name: "Find Sparks",
     links: {
       git: "https://github.com/ArdalanJaf/find-sparks",
       site: "https://findsparks.uk/",
       gitBack: "https://github.com/ArdalanJaf/find-sparks-back",
     },
-    notes:
-      "This main page homage-piece was done to test my CSS skills. Not this was done before I had much experience with javascript, so I had to think creatively to make certain functionality work (e.g. the pop-up banner at the top)",
+    notes: "Online dating app Features include ",
+    icon: "findSparks",
   },
   {
-    name: "HOMAGE",
+    name: "ReadEasy",
+    links: {
+      git: "https://github.com/ArdalanJaf/ReadEasy",
+      site: "https://ft1-hackathon.netlify.app/",
+    },
+    notes:
+      "This app was made by four students at The Jump Digital School as part of a hackathon challenge. The goal was to produce an app to help children learn to read. We were given 7 hours to complete the challenge.",
+  },
+  {
+    name: "Weather App",
+    links: {
+      git: "https://github.com/ArdalanJaf/weather-app",
+      site: "https://ardalan-weather-app.netlify.app/",
+    },
+    notes: "Weather app made in the process of learning how to use APIs.",
+  },
+  {
+    name: "Nowness Homage",
     links: {
       git: "https://github.com/ArdalanJaf/homage-nowness",
       site: "https://homage-nowness.netlify.app/",
     },
-    notes: "Homage-piece front-page made purely with HTML and CSS.",
+    notes:
+      "Fully-responsive homage-piece of nowness.com, made with pure HTML and CSS.",
   },
 ];
