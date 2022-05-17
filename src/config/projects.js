@@ -6,8 +6,11 @@ export const projects = [
       site: "https://findsparks.uk/",
       gitBack: "https://github.com/ArdalanJaf/find-sparks-back",
     },
-    notes: "Online dating app Features include ",
+    notes:
+      "This dating app was created to showcase front and back-end skills. Features include ",
     icon: "findSparks",
+    image: "findsparks.png",
+    phone: true,
   },
   {
     name: "ReadEasy",
@@ -16,7 +19,8 @@ export const projects = [
       site: "https://ft1-hackathon.netlify.app/",
     },
     notes:
-      "This app was made by four students at The Jump Digital School as part of a hackathon challenge. The goal was to produce an app to help children learn to read. We were given 7 hours to complete the challenge.",
+      "This app was made by me and three co-students as part of a hackathon challenge. The goal was to produce an app in 6 hours to help children learning to read.",
+    image: "readeasy.png",
   },
   {
     name: "Weather App",
@@ -24,7 +28,9 @@ export const projects = [
       git: "https://github.com/ArdalanJaf/weather-app",
       site: "https://ardalan-weather-app.netlify.app/",
     },
-    notes: "Weather app made in the process of learning how to use APIs.",
+    notes:
+      "Weather app was created in the process of learning how to use APIs. It uses openMapGL and _____ to provide an 8-day forecast for anywhere in the world.",
+    image: "nowness.png",
   },
   {
     name: "Nowness Homage",
@@ -33,6 +39,7 @@ export const projects = [
       site: "https://homage-nowness.netlify.app/",
     },
     notes:
-      "Fully-responsive homage-piece of nowness.com, made with pure HTML and CSS.",
+      "Fully-responsive homage-piece of nowness.com, made with pure HTML and CSS to showcase my ability to create any design required.",
+    image: "nowness.png",
   },
 ];

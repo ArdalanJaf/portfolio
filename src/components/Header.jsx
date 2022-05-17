@@ -11,7 +11,7 @@ function Header() {
     const position = window.pageYOffset;
     dispatch({
       type: types.SET_SCROLL_POSITION,
-      payload: { position: position },
+      payload: { now: position },
     });
   };
 
@@ -22,14 +22,20 @@ function Header() {
   return (
     <header
       className={
-        scrollPosition <= window.innerHeight * 0.46 ? "hideHeader" : ""
+        scrollPosition.now < window.innerHeight * 0.9
+          ? "hideHeader"
+          : scrollPosition.now >= scrollPosition.prev
+          ? "hideHeader"
+          : ""
       }
     >
-      <a href="#">
-        <h2>ARDALAN JAF</h2>
-      </a>
+      <div className="headerContainer">
+        <a href="www.ardalanjaf.com">
+          <h2>ARDALAN</h2>
+        </a>
 
-      <Links />
+        <Links header={true} />
+      </div>
     </header>
   );
 }

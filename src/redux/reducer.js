@@ -23,7 +23,10 @@ export function reducer(state = initialState, action) {
     }
     case types.SET_SCROLL_POSITION: {
       let scrollPosition = { ...state.scrollPosition };
-      scrollPosition = action.payload.position;
+      if (scrollPosition.now !== action.payload.now) {
+        scrollPosition.prev = scrollPosition.now;
+      }
+      scrollPosition.now = action.payload.now;
       const results = { ...state, scrollPosition };
       return results;
     }

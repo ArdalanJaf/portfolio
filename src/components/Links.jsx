@@ -1,11 +1,11 @@
 import React from "react";
 import { icons } from "../config/icons";
 
-function Links() {
+function Links(props) {
   return (
     <div className="links">
       <a href="" target="_blank" rel="noreferrer" className="cv">
-        <div>RESUMÉ</div>
+        <div>{props.header ? "CV" : "RESUMÉ"}</div>
       </a>
       <a href="https://github.com/ArdalanJaf" target="_blank" rel="noreferrer">
         {icons.gitHub}
@@ -20,7 +20,7 @@ function Links() {
       <a href="mailto:a.aljaf@gmail.com" target="_blank" rel="noreferrer">
         {icons.email}
       </a>
-      <div className="themeButton"></div>
+      {/* <div className="themeButton"></div> */}
     </div>
   );
 }

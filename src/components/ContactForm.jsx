@@ -61,6 +61,7 @@ function ContactForm() {
       {joiErrors.message && <JoiErrorNote inputName={"message"} />}
 
       <button
+        className="submitButton"
         type="submit"
         name="submit"
         onClick={(e) => {

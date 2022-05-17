@@ -1,5 +1,5 @@
 import "./App.scss";
-import React, { useEffect } from "react";
+import React from "react";
 // componenets
 import Header from "./components/Header";
 import Intro from "./components/Intro";
@@ -22,9 +22,10 @@ function App() {
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
+        <Header />
         <div className="container">
           <Toggle theme={theme} toggleTheme={themeToggler} />
-          {/* <Header /> */}
+
           {/* <Body /> */}
           <Intro />
           <Projects />

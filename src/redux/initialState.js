@@ -5,6 +5,6 @@ export const initialState = {
     message: "",
   },
   joiErrors: {},
-  scrollPosition: 0,
+  scrollPosition: { prev: 0, now: 0 },
   theme: "dark",
 };
