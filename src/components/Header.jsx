@@ -23,7 +23,7 @@ function Header() {
   return (
     <header
       className={
-        scrollPosition.now < window.innerHeight * 0.9
+        scrollPosition.now < window.innerHeight * 0.5
           ? "hideHeader"
           : scrollPosition.now >= scrollPosition.prev
           ? "hideHeader"

@@ -32,9 +32,9 @@ function App() {
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
+        <Toggle theme={theme} toggleTheme={themeToggler} />
         <Header />
         <div className="container">
-          <Toggle theme={theme} toggleTheme={themeToggler} />
           <Intro />
           <Projects />
           <About />
