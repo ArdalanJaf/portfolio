@@ -1,0 +1,43 @@
+.animateOnScroll {
+  transition: 0.5s all ease;
+
+  position: relative;
+}
+
+.animateOnScroll.fadeUp {
+  opacity: 0;
+  transform: translateY(150px);
+}
+.animateOnScroll.fadeUp.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animateOnScroll.fadeLeft {
+  opacity: 0;
+  transform: translateX(-150px);
+}
+.animateOnScroll.fadeLeft.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animateOnScroll.fadeRight {
+  opacity: 0;
+  transform: translateX(150px);
+}
+.animateOnScroll.fadeRight.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animateOnScroll.grow {
+  opacity: 0;
+  transform: translateY(150px);
+  transform: scale(0.4);
+}
+.animateOnScroll.grow.active {
+  transform: translateY(0);
+  transform: scale(1);
+  opacity: 1;
+}

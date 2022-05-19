@@ -1,24 +1,16 @@
-import React, { useState } from "react";
-// import folder from "../static";
-// import logo from "../static/findSparksIcon.svg";
+import React from "react";
 
 function Project(props) {
   const { project } = props;
-  // const [open, setOpen] = useState(true);
-  // onClick={() => setOpen(!open)}
   const image = require("../assets/" + project.image);
 
   return (
     <div className="project">
       <>
-        <div className="projectImage">
-          <img
-            src={image}
-            alt="website"
-            className={project.phone ? "phone" : ""}
-          />
+        <div className="projectImage animateOnScroll fadeUp">
+          <img src={image} alt={project.name} />
         </div>
-        <div className="projectInfo">
+        <div className="projectInfo animateOnScroll fadeUp">
           <h3>{project.name}</h3>
 
           <p>{project.notes}</p>

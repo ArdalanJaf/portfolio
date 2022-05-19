@@ -7,10 +7,8 @@ export const projects = [
       gitBack: "https://github.com/ArdalanJaf/find-sparks-back",
     },
     notes:
-      "This dating app was created to showcase front and back-end skills. Features include ",
-    icon: "findSparks",
+      "A dating app was created to showcase front and back-end skills. Features include ..",
     image: "findsparks.png",
-    phone: true,
   },
   {
     name: "ReadEasy",
@@ -30,7 +28,7 @@ export const projects = [
     },
     notes:
       "Weather app was created in the process of learning how to use APIs. It uses openMapGL and _____ to provide an 8-day forecast for anywhere in the world.",
-    image: "nowness.png",
+    image: "weatherApp.png",
   },
   {
     name: "Nowness Homage",

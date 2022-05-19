@@ -25,6 +25,8 @@ export const GlobalStyles = createGlobalStyle`
   header {
     background-color: ${({ theme }) => theme.body};
     transition: background-color 0.30s ease-in-out;
+    transition: opacity 0.3s ease-in;
+
   }
 
   header .headerContainer a {

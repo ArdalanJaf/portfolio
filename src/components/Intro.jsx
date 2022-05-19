@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import Links from "./Links";
-// import animateWord from "../animateWord";
 
 function Intro() {
   const targetName = "ARDALAN AL-JAF";
@@ -10,7 +9,7 @@ function Intro() {
   const [animatedName, setAnimatedName] = useState("");
 
   function genCodeWords(target) {
-    let codeLetters = "#$%&@*+§10" + target.replace(" ", "");
+    let codeLetters = "#$%&@§10" + target.replace(" ", "").replace("-", "");
     let codeArr = [];
     function randomInt(max) {
       return Math.floor(Math.random() * max);
@@ -31,7 +30,7 @@ function Intro() {
     codeArr.push(target);
 
     // for pause on empty name
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
       codeArr.unshift("");
     }
 
@@ -41,15 +40,13 @@ function Intro() {
 
   useEffect(() => {
     const id = setInterval(() => {
-      // console.log(index);
       setIndex(index + 1);
       if (index < codeWordArr.length) {
         let current = codeWordArr[index];
         setAnimatedName(current);
-      } else if (index > 34) {
+      } else if (index > 30) {
         setIndex(0);
         setCodeWordArr(genCodeWords(targetName));
-        // console.log(codeWordArr);
       } else {
         return;
       }

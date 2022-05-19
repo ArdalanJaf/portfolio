@@ -1,5 +1,9 @@
+import "./normalize.css";
 import "./App.scss";
-import React from "react";
+import "./animateElements/animateElements.css";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { animateOnScroll } from "./animateElements/animateOnScroll";
 // componenets
 import Header from "./components/Header";
 import Intro from "./components/Intro";
@@ -15,8 +19,14 @@ import { useDarkMode } from "./components/darkMode/useDarkMode";
 import Toggle from "./components/darkMode/Toggler";
 
 function App() {
+  const scrollPosition = useSelector((state) => state.scrollPosition);
+
   const [theme, themeToggler] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
+
+  useEffect(() => {
+    animateOnScroll();
+  }, [scrollPosition]);
 
   return (
     <ThemeProvider theme={themeMode}>
@@ -25,14 +35,12 @@ function App() {
         <Header />
         <div className="container">
           <Toggle theme={theme} toggleTheme={themeToggler} />
-
-          {/* <Body /> */}
           <Intro />
           <Projects />
           <About />
           <Contact />
-          <Footer />
         </div>
+        <Footer />
       </>
     </ThemeProvider>
   );

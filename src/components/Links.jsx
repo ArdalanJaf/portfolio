@@ -4,7 +4,12 @@ import { icons } from "../config/icons";
 function Links(props) {
   return (
     <div className="links">
-      <a href="" target="_blank" rel="noreferrer" className="cv">
+      <a
+        href=""
+        target="_blank"
+        rel="noreferrer"
+        className={props.header ? "cv cvShort" : "cv"}
+      >
         <div>{props.header ? "CV" : "RESUMÉ"}</div>
       </a>
       <a href="https://github.com/ArdalanJaf" target="_blank" rel="noreferrer">

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Links from "./Links";
+import Nav from "./Nav";
 import { useSelector, useDispatch } from "react-redux";
 import { types } from "../redux/types";
 
@@ -33,6 +34,7 @@ function Header() {
         <a href="www.ardalanjaf.com">
           <h2>ARDALAN</h2>
         </a>
+        <Nav />
 
         <Links header={true} />
       </div>

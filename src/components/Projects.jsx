@@ -4,7 +4,7 @@ import { projects } from "../config/projects";
 
 function Projects() {
   return (
-    <section className="projects">
+    <section className="section projects" id="projects">
       <h2>PROJECTS</h2>
       <div className="projectContainer">
         {projects.map((project, index) => {

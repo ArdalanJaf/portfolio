@@ -3,10 +3,10 @@ import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <section className="contact">
+    <section className="section contact" id="contact">
       <h2>CONTACT</h2>
       <div className="flexContainer">
-        <div className="contactText">
+        <div className="contactText animateOnScroll grow">
           {" "}
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
