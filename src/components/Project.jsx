@@ -17,7 +17,6 @@ function Project(props) {
 
           <p>{project.notes}</p>
           <div className="projectLinks">
-            {/* <a href={project.links.site}>SITE</a> */}
             <a href={project.links.git} className="gitFrontSVG">
               {icons.gitOctoCat}
             </a>
