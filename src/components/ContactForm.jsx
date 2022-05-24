@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { API_URL } from "../config/API_URL";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { types } from "../redux/types";
 import JoiErrorNote from "./JoiErrorNote";
+import MsgSentNotification from "./MsgNotification";
 
 function ContactForm() {
   const joiErrors = useSelector((state) => state.joiErrors);
   const formData = useSelector((state) => state.formData);
   const dispatch = useDispatch();
+  const [messageSent, setMessageSent] = useState(true);
 
   // Send user-inputs to back-end.
   const sendFormData = async (payload) => {
@@ -26,9 +28,7 @@ function ContactForm() {
 
         // notify user of errors
       } else {
-        alert("validation succesful");
-        // notify user that message recieved
-        // clear inputs?
+        setMessageSent(true);
       }
     } catch (error) {
       alert("API down " + error);
@@ -74,6 +74,8 @@ function ContactForm() {
       >
         GET IN TOUCH
       </button>
+
+      {messageSent && <MsgSentNotification />}
     </form>
   );
 }

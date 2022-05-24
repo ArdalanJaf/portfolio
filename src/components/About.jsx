@@ -13,11 +13,17 @@ function About() {
           ></img>
         </div>
         <div className="aboutText animateOnScroll fadeUp">
+          {/* 
+          1.can you do the job?
+          2.Will you be a good team player?
+          3. how quickly can you learn/progress?  
+          */}
           <p>
             Hello World! <br />
-            I'm Ardalan Al-Jaf, an aspiring Full-Stack Web-Developer based in
-            London.
+            I'm Ardalan Al-Jaf, an aspiring Full-Stack Web-Developer born and
+            based in London.
           </p>
+          <p></p>
           <Interests />
         </div>
       </div>

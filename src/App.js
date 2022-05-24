@@ -33,7 +33,7 @@ function App() {
       <>
         <GlobalStyles />
         <Toggle theme={theme} toggleTheme={themeToggler} />
-        <Header />
+        {/* <Header /> */}
         <div className="container">
           <Intro />
           <Projects />

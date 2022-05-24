@@ -169,12 +169,21 @@ nav {
 .projectImage {
   display: flex;
   justify-content: center;
+  position: relative;
   // margin-bottom: 5%;
   img {
     width: 100%;
   }
   .phone {
     width: 65%;
+  }
+  a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
 }
 
