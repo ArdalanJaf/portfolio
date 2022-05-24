@@ -69,6 +69,9 @@ nav {
     &:nth-of-type(n + 2) {
       margin-left: 10px;
     }
+    &:hover {
+      transform: scale(0.9);
+    }
   }
 }
 
@@ -278,7 +281,7 @@ footer {
 
 @media (min-width: 800px) {
   .intro {
-    padding: 15%;
+    padding: 10%;
   }
 
   h1 {

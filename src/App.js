@@ -1,9 +1,9 @@
 import "./normalize.css";
 import "./App.scss";
-import "./animateElements/animateElements.css";
+import "./utils/animateElements/animateElements.css";
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { animateOnScroll } from "./animateElements/animateOnScroll";
+import { animateOnScroll } from "./utils/animateElements/animateOnScroll";
 // componenets
 import Header from "./components/Header";
 import Intro from "./components/Intro";
