@@ -49,7 +49,7 @@ export const GlobalStyles = createGlobalStyle`
     stroke: ${({ theme }) => theme.text}
   }
 
-  button {
+  button, .msgSentNotification p {
     color: ${({ theme }) => theme.body};
   }
   `;

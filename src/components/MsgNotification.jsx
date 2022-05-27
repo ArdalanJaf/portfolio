@@ -2,7 +2,7 @@ import React from "react";
 function MsgSentNotification() {
   return (
     <div className="msgSentNotification">
-      <p>Message recieved &#9989;</p>
+      <p>MESSAGE RECIEVED, THANK YOU!</p>
     </div>
   );
 }

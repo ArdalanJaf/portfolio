@@ -18,14 +18,27 @@ function About() {
           1.can you do the job?
           2.Will you be a good team player?
           3. how quickly can you learn/progress?  
+          ttRPGs (nerdy), (social?), ()
           */}
           <p>
             Hello World! <br />
-            I'm Ardalan Al-Jaf, an aspiring Full-Stack Web-Developer born and
-            based in London.
+            I'm Ardalan Al-Jaf, an energetic and detail-orientated Full-Stack
+            Web-Developer born and based in London.
           </p>
-          <p></p>
-          <Interests />
+          <br></br>
+          <p>
+            I bring over a decade of diverse experience in <span>learning</span>
+            , <span>team-work</span> and <span>problem-solving</span> from
+            various fields to software-engineering.
+          </p>
+          <br></br>
+          <p>
+            Aside from coding, I enjoy <span>building with my hands</span>,{" "}
+            <span>doodling</span>, grabbing{" "}
+            <span>street-food with friends</span> and{" "}
+            <span>table-top role playing games</span>.
+          </p>
+          {/* <Interests /> */}
         </div>
       </div>
       <Skills />
