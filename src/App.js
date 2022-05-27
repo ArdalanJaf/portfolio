@@ -36,8 +36,8 @@ function App() {
         <Header />
         <div className="container">
           <Intro />
-          <Projects />
           <About />
+          <Projects />
           <Contact />
         </div>
         <Footer />

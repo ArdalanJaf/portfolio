@@ -10,7 +10,7 @@ function ContactForm() {
   const joiErrors = useSelector((state) => state.joiErrors);
   const formData = useSelector((state) => state.formData);
   const dispatch = useDispatch();
-  const [messageSent, setMessageSent] = useState(true);
+  const [messageSent, setMessageSent] = useState(false);
 
   // Send user-inputs to back-end.
   const sendFormData = async (payload) => {
@@ -45,6 +45,8 @@ function ContactForm() {
         });
       }}
     >
+      {messageSent && <MsgSentNotification />}
+
       <input type="text" name="name" id="name" placeholder="YOUR NAME" />
       {joiErrors.name && <JoiErrorNote inputName={"name"} />}
 
@@ -74,8 +76,6 @@ function ContactForm() {
       >
         GET IN TOUCH
       </button>
-
-      {messageSent && <MsgSentNotification />}
     </form>
   );
 }

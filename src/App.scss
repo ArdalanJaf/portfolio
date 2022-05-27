@@ -286,7 +286,7 @@ nav {
   width: 170px;
   margin: auto;
   padding: 10px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   // color: black;
   background-color: $highlightColor;
@@ -296,6 +296,18 @@ nav {
   // transition: transform 0.2s ease;
   &:hover {
     transform: scale(0.9);
+  }
+}
+
+.msgSentNotification {
+  padding: 0;
+  p {
+    border: solid 2px rgb(1, 169, 1);
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
   }
 }
 
@@ -358,7 +370,7 @@ footer {
 
   .flexContainer {
     flex-direction: row;
-    div {
+    div:not(.msgSentNotification) {
       width: 100%;
       padding: 5%;
     }

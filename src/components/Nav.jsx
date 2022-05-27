@@ -34,11 +34,11 @@ function Header() {
 
   return (
     <nav>
-      <a className="nav navProjects" href="#projects">
-        PROJECTS
-      </a>
       <a className="nav navAbout" href="#about">
         ABOUT
+      </a>
+      <a className="nav navProjects" href="#projects">
+        PROJECTS
       </a>
       <a className="nav navContact" href="#contact">
         CONTACT
