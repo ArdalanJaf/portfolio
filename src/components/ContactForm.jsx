@@ -37,7 +37,7 @@ function ContactForm() {
 
   return (
     <form
-      className="contactForm animateOnScroll grow"
+      className="contactForm animateOnScroll fadeUp"
       onInput={(e) => {
         dispatch({
           type: types.SET_FORM_DATA,

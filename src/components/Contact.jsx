@@ -6,7 +6,7 @@ function Contact() {
     <section className="section contact" id="contact">
       <h2>CONTACT</h2>
       <div className="flexContainer">
-        <div className="contactText animateOnScroll grow">
+        <div className="contactText animateOnScroll fadeUp">
           {" "}
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima

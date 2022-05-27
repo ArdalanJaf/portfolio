@@ -7,8 +7,9 @@ export const projects = [
       gitBack: "https://github.com/ArdalanJaf/find-sparks-back",
     },
     notes:
-      "A dating app was created to showcase front and back-end skills. Features include ..",
+      "A dating app created to showcase front and back-end abilities. Features include multi-user log-in authentification and a unique points-based matching algorythm.",
     image: "findsparks.png",
+    tech: "React - Redux | Node.js - Express | SQL | Bootstrap",
   },
   {
     name: "ReadEasy",
@@ -17,8 +18,9 @@ export const projects = [
       site: "https://ft1-hackathon.netlify.app/",
     },
     notes:
-      "This app was made by me and three co-students as part of a hackathon challenge. The goal was to produce an app in 6 hours to help children learning to read.",
+      "This app was made in a team of four as part of a hackathon challenge. The goal was to produce an app in 6 hours to help children learning to read.",
     image: "readeasy.png",
+    tech: "React | Axios | JS | SASS | GSAP ",
   },
   {
     name: "Weather App",
@@ -27,8 +29,9 @@ export const projects = [
       site: "https://ardalan-weather-app.netlify.app/",
     },
     notes:
-      "Weather app was created in the process of learning how to use APIs. It uses openMapGL and _____ to provide an 8-day forecast for anywhere in the world.",
+      "Weather app that showcases ability to utilise APIs using axios. It uses openMapGL and open-weather-map to provide an 8-day forecast for anywhere in the world.",
     image: "weatherApp.png",
+    tech: "HTML | AXIOS | JS | SASS",
   },
   {
     name: "Nowness Homage",
@@ -39,5 +42,6 @@ export const projects = [
     notes:
       "Fully-responsive homage-piece of nowness.com, made with pure HTML and CSS to showcase my ability to create any design required.",
     image: "nowness.png",
+    tech: "HTML | SASS",
   },
 ];

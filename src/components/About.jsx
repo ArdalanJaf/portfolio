@@ -1,5 +1,6 @@
 import React from "react";
 import Interests from "./Interests";
+import Skills from "./Skills";
 
 function About() {
   return (
@@ -27,6 +28,7 @@ function About() {
           <Interests />
         </div>
       </div>
+      <Skills />
     </section>
   );
 }

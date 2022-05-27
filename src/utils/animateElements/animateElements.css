@@ -34,7 +34,7 @@
 .animateOnScroll.grow {
   opacity: 0;
   transform: translateY(150px);
-  transform: scale(0.4);
+  transform: scale(0.8);
 }
 .animateOnScroll.grow.active {
   transform: translateY(0);

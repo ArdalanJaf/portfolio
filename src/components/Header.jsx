@@ -25,16 +25,18 @@ function Header() {
       className={
         scrollPosition.now < window.innerHeight * 0.5
           ? "hideHeader"
-          : scrollPosition.now >= scrollPosition.prev
+          : scrollPosition.now > scrollPosition.prev
           ? "hideHeader"
           : ""
       }
     >
       <div className="headerContainer">
+        {/* <div className=".navContainer"> */}
         <a href="www.ardalanjaf.com">
           <h2>ARDALAN</h2>
         </a>
         <Nav />
+        {/* </div> */}
 
         <Links header={true} />
       </div>
