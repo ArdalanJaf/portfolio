@@ -186,9 +186,11 @@ nav {
 .projectImage {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
   img {
     width: 100%;
+    height: fit-content;
     transition: all 0.2s;
   }
   &:hover img {
