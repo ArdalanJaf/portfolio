@@ -11,7 +11,7 @@ const Button = styled.button`
   font-size:0.8rem;
   padding: 0.6rem;
   position: absolute;
-  z-index:2;
+  z-index: 2;
   }`;
 
 const Toggle = ({ theme, toggleTheme }) => {
