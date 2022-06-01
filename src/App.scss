@@ -260,9 +260,12 @@ nav {
 .aboutImage {
   margin: auto;
   margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
   img {
-    height: 100%;
     width: 100%;
+    max-width: 360px;
+    // margin: auto;
   }
 }
 
@@ -272,7 +275,7 @@ nav {
 
 .skillsList {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+  grid-template: repeat(2, 1fr) / repeat(6, 1fr);
   gap: 1%;
   padding: 5%;
   margin-top: 5%;
@@ -335,7 +338,7 @@ nav {
     // width: fit-content;
     margin: auto;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
 }
@@ -406,12 +409,11 @@ footer {
     width: 50%;
   }
 
-  .about {
-    max-width: 800px;
-    margin: 0 auto;
+  .aboutImage {
+    margin: 0;
   }
 
-  .aboutImage {
+  .skillsList {
     margin: 0;
   }
 
@@ -420,6 +422,12 @@ footer {
     div:not(.msgSentNotification) {
       width: 100%;
       padding: 5%;
+      padding-top: 0;
+    }
+    .aboutText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .contactForm {
       order: -1;

@@ -16,6 +16,7 @@ function ContactForm() {
   const sendFormData = async (payload) => {
     try {
       const result = await axios.post(API_URL + "/messaging", payload);
+      console.log(result);
       if (result.data.status === 0) {
         alert("API error: " + result.data.error);
         // notify user that API is down, advise to email me.
@@ -31,7 +32,8 @@ function ContactForm() {
         setMessageSent(true);
       }
     } catch (error) {
-      alert("API down " + error);
+      // alert("API down " + error);
+      console.log(error);
     }
   };
 
@@ -66,6 +68,7 @@ function ContactForm() {
         name="submit"
         onClick={(e) => {
           e.preventDefault();
+          setMessageSent(false);
           sendFormData(formData);
           dispatch({
             type: types.CLEAR_JOI_ERRORS,
