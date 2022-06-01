@@ -10,7 +10,7 @@ function ContactForm() {
   const joiErrors = useSelector((state) => state.joiErrors);
   const formData = useSelector((state) => state.formData);
   const dispatch = useDispatch();
-  const [messageSent, setMessageSent] = useState(true);
+  const [messageSent, setMessageSent] = useState(false);
 
   // Send user-inputs to back-end.
   const sendFormData = async (payload) => {

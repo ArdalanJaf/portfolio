@@ -1,6 +1,5 @@
 import React from "react";
 import { icons } from "../config/icons";
-import Tooltip from "./Tooltip";
 
 function Project(props) {
   const { project } = props;

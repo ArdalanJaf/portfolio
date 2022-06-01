@@ -260,6 +260,10 @@ nav {
 .aboutImage {
   margin: auto;
   margin-bottom: 10%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .skills h3 {
@@ -400,6 +404,15 @@ footer {
   .projectInfo,
   .projectImage {
     width: 50%;
+  }
+
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .aboutImage {
+    margin: 0;
   }
 
   .flexContainer {
