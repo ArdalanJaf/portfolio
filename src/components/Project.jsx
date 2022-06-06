@@ -1,5 +1,6 @@
 import React from "react";
 import { icons } from "../config/icons";
+import Tooltip from "./tooltip/Tooltip";
 
 function Project(props) {
   const { project } = props;
@@ -27,7 +28,7 @@ function Project(props) {
               rel="noreferrer"
               className="gitFrontSVG"
             >
-              {icons.gitOctoCat}
+              <Tooltip content="git-repo">{icons.gitOctoCat}</Tooltip>
             </a>
             {project.links.gitBack && (
               <a
@@ -36,7 +37,9 @@ function Project(props) {
                 rel="noreferrer"
                 className="gitBackSVG"
               >
-                {icons.gitOctoCat}
+                <Tooltip content="back-end git-repo">
+                  {icons.gitOctoCat}
+                </Tooltip>
               </a>
             )}
           </div>

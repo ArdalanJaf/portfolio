@@ -1,5 +1,6 @@
 import React from "react";
 import { icons } from "../config/icons";
+import Tooltip from "./tooltip/Tooltip";
 
 function Links(props) {
   return (
@@ -10,8 +11,13 @@ function Links(props) {
         rel="noreferrer"
         className={props.header ? "cv cvShort" : "cv"}
       >
-        <div>{props.header ? "CV" : "RESUMÉ"}</div>
+        <span className="cvIcon">{props.header ? "CV" : "RESUMÉ"}</span>
       </a>
+
+      <a href="mailto:contact@ardalanjaf.com" target="_blank" rel="noreferrer">
+        <Tooltip content="contact@ardalanjaf.com">{icons.email}</Tooltip>
+      </a>
+
       <a href="https://github.com/ArdalanJaf" target="_blank" rel="noreferrer">
         {icons.gitHub}
       </a>
@@ -22,10 +28,6 @@ function Links(props) {
       >
         {icons.linkedIn}
       </a>
-      <a href="mailto:contact@ardalanjaf.com" target="_blank" rel="noreferrer">
-        {icons.email}
-      </a>
-      {/* <div className="themeButton"></div> */}
     </div>
   );
 }

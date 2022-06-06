@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { types } from "../../redux/types";
 
@@ -12,7 +12,13 @@ export const useDarkMode = () => {
   };
 
   const themeToggler = () => {
+    let links = Array.from(document.querySelectorAll(".intro .cv, .intro svg"));
+    links.forEach((link) => (link.style.transition = "all 0.3s ease-in-out"));
+
     theme === "light" ? setMode("dark") : setMode("light");
+    setTimeout(() => {
+      links.forEach((link) => (link.style.transition = null));
+    }, 300);
   };
 
   useEffect(() => {

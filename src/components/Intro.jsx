@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Links from "./Links";
 import { genCodeWords } from "../utils/codeWordGenerator";
+import Toggle from "./darkMode/Toggler";
+import { useDarkMode } from "./darkMode/useDarkMode";
 
 function Intro() {
   const targetName = "ARDALAN AL-JAF";
-
   const [codeWordArr, setCodeWordArr] = useState(genCodeWords(targetName));
   const [index, setIndex] = useState(0);
   const [animatedName, setAnimatedName] = useState("");
+  const [theme, themeToggler] = useDarkMode();
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -15,7 +17,7 @@ function Intro() {
       if (index < codeWordArr.length) {
         let current = codeWordArr[index];
         setAnimatedName(current);
-      } else if (index > 30) {
+      } else if (index > 35) {
         setIndex(0);
         setCodeWordArr(genCodeWords(targetName));
       } else {
@@ -35,13 +37,11 @@ function Intro() {
           FULL-STACK <br />
           WEB DEVELOPER
         </h1>
-        <Links />
+        <div className="linkContainer">
+          <Links />
+          <Toggle theme={theme} toggleTheme={themeToggler} />
+        </div>
       </div>
-      {/* <div>
-        <p>WORK</p>
-        <p>ABOUT</p>
-        <p>CONTACT</p>
-      </div> */}
     </section>
   );
 }

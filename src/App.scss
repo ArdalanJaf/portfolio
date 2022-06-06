@@ -91,6 +91,7 @@ nav {
 
 .links {
   display: flex;
+  height: 30px;
   a {
     display: flex;
     align-items: center;
@@ -119,7 +120,6 @@ nav {
 
 .gitBackSVG svg:hover {
   transform: scale(0.9);
-
   stroke: $highlightColor;
 }
 
@@ -127,43 +127,61 @@ nav {
   text-decoration: none;
   font-weight: 900;
   font-size: 18px;
-  div {
+  border-radius: 6px;
+  .cvIcon {
     height: 100%;
-    //   width: 30px;
     padding: 0 8px;
-    border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.cvShort div {
+.cvShort .cvIcon {
   padding: 0 4px;
 }
 .links .cv:hover {
   transform: scale(0.9);
-  div {
-    background-color: $highlightColor;
-  }
+  background-color: $highlightColor;
 }
 
 //INTRO
 .intro {
   display: flex;
   align-items: center;
+  position: relative;
   h1 {
     margin-bottom: 5px;
   }
+  .linkContainer {
+    display: flex;
+    height: 30px;
+    margin: 0;
+  }
 }
 
-.themeButton {
+.themeToggler {
+  // background-color: white;
+  border-radius: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background-color: $highlightColor;
-  height: 20px;
-  width: 20px;
-  margin: 5px;
-  margin-left: 10px;
+  background-color: rgb(64, 200, 246);
+  &:hover {
+    transform: scale(0.9);
+    border-width: 15px;
+  }
 }
+
+// .themeButton {
+//   border-radius: 50%;
+//   background-color: $highlightColor;
+//   height: 20px;
+//   width: 20px;
+//   margin: 5px;
+//   margin-left: 10px;
+// }
 
 //PROJECTS
 .projects {
@@ -226,12 +244,6 @@ nav {
   .tech {
     font-weight: 600;
   }
-}
-
-.tooltip {
-  position: absolute;
-  background-color: $highlightColor;
-  border-radius: 10px;
 }
 
 .projectLinks {
@@ -323,7 +335,7 @@ nav {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  // transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
   &:hover {
     transform: scale(0.9);
   }
@@ -334,7 +346,6 @@ nav {
   p {
     background-color: rgb(1, 193, 1);
     border-radius: 5px;
-    // width: fit-content;
     margin: auto;
     padding: 10px;
     font-size: 14px;

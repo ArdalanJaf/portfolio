@@ -52,7 +52,7 @@ export const icons = {
     </svg>
   ),
   skills: {
-    html5: (
+    HTML: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -72,7 +72,7 @@ export const icons = {
         />
       </svg>
     ),
-    css3: (
+    CSS: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -92,7 +92,7 @@ export const icons = {
         />
       </svg>
     ),
-    sass: (
+    SASS: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -106,7 +106,7 @@ export const icons = {
         />
       </svg>
     ),
-    bootstrap: (
+    Bootstrap: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -124,7 +124,7 @@ export const icons = {
         />
       </svg>
     ),
-    js: (
+    Javascript: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -139,7 +139,7 @@ export const icons = {
         />
       </svg>
     ),
-    react: (
+    React: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -162,7 +162,7 @@ export const icons = {
         <circle cx="24" cy="24" r="4" fill="#80deea" />
       </svg>
     ),
-    redux: (
+    Redux: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -184,7 +184,7 @@ export const icons = {
         />
       </svg>
     ),
-    node: (
+    Node: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -203,7 +203,7 @@ export const icons = {
         />
       </svg>
     ),
-    sql: (
+    SQL: (
       <svg
         width="48px"
         height="48px"
@@ -218,7 +218,7 @@ export const icons = {
         />
       </svg>
     ),
-    photoshop: (
+    Photoshop: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -240,7 +240,7 @@ export const icons = {
         />
       </svg>
     ),
-    aftereffects: (
+    AfterEffects: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"

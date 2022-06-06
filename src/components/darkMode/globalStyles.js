@@ -15,16 +15,14 @@ export const GlobalStyles = createGlobalStyle`
   .cv {
     color: ${({ theme }) => theme.body};
     transition: color 0.3s ease-in-out;
-  }
-
-  .cv div {
     background-color: ${({ theme }) => theme.text};
+
   }
 
   header {
     background-color: ${({ theme }) => theme.body};
     transition: background-color 0.30s ease-in-out;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in-out;
   }
 
   header .headerContainer a {
@@ -36,7 +34,7 @@ export const GlobalStyles = createGlobalStyle`
    
   }
 
-  header .headerContainer .cv div {
+  header .headerContainer .cv {
     background-color: ${({ theme }) => theme.text};
     
   }
