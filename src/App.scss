@@ -155,6 +155,7 @@ nav {
   .linkContainer {
     display: flex;
     height: 30px;
+    width: fit-content;
     margin: 0;
   }
 }
@@ -293,6 +294,7 @@ nav {
   svg {
     width: 100%;
     height: 100%;
+    transition: 0.1s;
     &:hover {
       transform: scale(0.9);
     }

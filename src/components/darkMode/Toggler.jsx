@@ -11,10 +11,7 @@ const Button = styled.button`
 
 const Toggle = ({ theme, toggleTheme }) => {
   return (
-    <Tooltip
-      content={theme === "light" ? "dark mode" : "light mode"}
-      style={{ width: null }}
-    >
+    <Tooltip content={theme === "light" ? "dark mode" : "light mode"}>
       <Button className="themeToggler" onClick={toggleTheme}></Button>
     </Tooltip>
   );

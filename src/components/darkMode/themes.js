@@ -2,7 +2,7 @@ export const lightTheme = {
   body: "#FFFFFF",
   text: "#000000",
   toggleBorder: "#000000",
-  toggleBackground: "rgb(64, 200, 246)",
+  toggleBackground: "rgb(47, 116, 200)",
 };
 
 export const darkTheme = {
