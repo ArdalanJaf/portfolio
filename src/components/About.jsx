@@ -1,5 +1,4 @@
 import React from "react";
-import Interests from "./Interests";
 import Skills from "./Skills";
 
 function About() {
@@ -39,7 +38,6 @@ function About() {
             <span>street-food with friends</span> and{" "}
             <span>table-top role playing games</span>.
           </p>
-          {/* <Interests /> */}
         </div>
       </div>
       <Skills />

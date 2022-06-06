@@ -10,30 +10,34 @@ function ContactForm() {
   const joiErrors = useSelector((state) => state.joiErrors);
   const formData = useSelector((state) => state.formData);
   const dispatch = useDispatch();
-  const [messageSent, setMessageSent] = useState(false);
+  const [messageSent, setMessageSent] = useState(true);
 
   // Send user-inputs to back-end.
   const sendFormData = async (payload) => {
     try {
       const result = await axios.post(API_URL + "/messaging", payload);
-      console.log(result);
+      console.log("results: ", result);
+
+      // notify user that API is down, advise to email me.
       if (result.data.status === 0) {
         alert("API error: " + result.data.error);
-        // notify user that API is down, advise to email me.
+
+        // notify user of errors
       } else if (result.data.joiErrors) {
-        console.log(result.data.joiErrors);
+        // console.log(result.data.joiErrors);
         dispatch({
           type: types.SET_JOI_ERRORS,
           payload: { joiErrors: result.data.joiErrors },
         });
 
-        // notify user of errors
+        // notify user message recieved
       } else {
         setMessageSent(true);
       }
     } catch (error) {
-      // alert("API down " + error);
-      console.log(error);
+      alert("API down " + error);
+      // console.log(error);
+      // console.log("more specific: ", error.response.data);
     }
   };
 

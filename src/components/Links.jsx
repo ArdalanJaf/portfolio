@@ -22,7 +22,7 @@ function Links(props) {
       >
         {icons.linkedIn}
       </a>
-      <a href="mailto:a.aljaf@gmail.com" target="_blank" rel="noreferrer">
+      <a href="mailto:contact@ardalanjaf.com" target="_blank" rel="noreferrer">
         {icons.email}
       </a>
       {/* <div className="themeButton"></div> */}

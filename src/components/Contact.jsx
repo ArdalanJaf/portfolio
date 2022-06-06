@@ -8,13 +8,7 @@ function Contact() {
       <div className="flexContainer">
         <div className="contactText animateOnScroll fadeUp">
           {" "}
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-            ullam atque, quidem dolorem placeat et nemo. Tempora aperiam culpa
-            deleniti maiores sit quam quasi beatae eos, soluta ea doloremque
-            quisquam, suscipit voluptatem at perspiciatis officiis sequi. Quod,
-            nihil. Eum, modi?
-          </p>
+          <p></p>
         </div>
         <ContactForm />
       </div>
@@ -23,3 +17,7 @@ function Contact() {
 }
 
 export default Contact;
+
+// CONTACT CONTENT
+// ATTACH CV
+// RE-UPLOAD FRONT
