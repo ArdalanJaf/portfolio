@@ -7,8 +7,8 @@ Designed to be very easy to navigate, with recruiters and employers in mind (who
 ## Software
 
 - React
- - Redux
- - Axios
+  - Redux
+  - Axios
 - Node.js
   - Express
   - Nodemailer
