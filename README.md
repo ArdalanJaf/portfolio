@@ -19,9 +19,9 @@ Designed to be very easy to navigate, with recruiters and employers in mind (who
 
 - Fully-responsive 
 - Light/Dark modes
-- Custom title type-animation using pure JS
-- CSS animations
-- Tooltips
 - Contact-form that is validated in the back-end using joi
 - SQL database to store contact-form info
 - Uses nodemailer to email contact-form info to my email address
+- Custom title type-animation using pure JS
+- CSS animations to enhance interactivity and clarity
+- Tooltips
