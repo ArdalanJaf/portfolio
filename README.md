@@ -2,7 +2,7 @@
 
 Fully responsive 1-page [portfolio website](https://www.ardalanjaf.com/) with [back-end](https://github.com/ArdalanJaf/portfolio-back).
 
-Designed to be very easy to navigate, with recruiters and employers in mind (who will likely only have 30-60s to view each candidate).
+Designed to be very easy to navigate, with employers in mind who will likely only have 30-60s to intitially view potential employees/contracters.
 
 ## Software
 
