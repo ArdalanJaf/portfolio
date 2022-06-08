@@ -16,7 +16,6 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/darkMode/globalStyles";
 import { lightTheme, darkTheme } from "./components/darkMode/themes";
 import { useDarkMode } from "./components/darkMode/useDarkMode";
-// import Toggle from "./components/darkMode/Toggler";
 
 function App() {
   const scrollPosition = useSelector((state) => state.scrollPosition);
@@ -32,11 +31,9 @@ function App() {
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
-
         <Header />
         <div className="container">
           <Intro />
-          {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
           <Projects />
           <About />
           <Contact />

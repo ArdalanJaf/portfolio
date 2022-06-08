@@ -8,7 +8,16 @@ function Contact() {
       <div className="flexContainer">
         <div className="contactText animateOnScroll fadeUp">
           {" "}
-          <p></p>
+          <p>
+            If you have any questions about me, my projects or the meaning of
+            life, please feel free to send me a message and I will get back to
+            you swiftly.
+          </p>
+          <p>
+            <br></br>
+            Alternatively, email me directly: <br></br>
+            <span>CONTACT@ARDALANJAF.COM</span>
+          </p>
         </div>
         <ContactForm />
       </div>

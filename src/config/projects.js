@@ -7,7 +7,7 @@ export const projects = [
       gitBack: "https://github.com/ArdalanJaf/find-sparks-back",
     },
     notes:
-      "A dating app created to showcase front and back-end abilities. Features include multi-user log-in middleware authentification and a unique points-based matching algorythm.",
+      "A dating app created to showcase front and back-end abilities. Features include multi-user log-in middleware authentification and a unique points-based matching algorithm.",
     image: "findsparks.png",
     tech: "React - Redux | Node.js - Express | SQL | Bootstrap",
   },

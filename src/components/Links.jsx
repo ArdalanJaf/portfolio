@@ -1,12 +1,13 @@
 import React from "react";
 import { icons } from "../config/icons";
 import Tooltip from "./tooltip/Tooltip";
+import pdf from "../assets/Ardalan Al-Jaf - Resume.pdf";
 
 function Links(props) {
   return (
     <div className="links">
       <a
-        href=""
+        href={pdf}
         target="_blank"
         rel="noreferrer"
         className={props.header ? "cv cvShort" : "cv"}

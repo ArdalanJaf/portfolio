@@ -12,12 +12,14 @@ export const useDarkMode = () => {
   };
 
   const themeToggler = () => {
-    let links = Array.from(document.querySelectorAll(".intro .cv, .intro svg"));
+    let links = Array.from(
+      document.querySelectorAll(".intro .cv, .intro svg, .themeToggler")
+    );
     links.forEach((link) => (link.style.transition = "all 0.3s ease-in-out"));
 
     theme === "light" ? setMode("dark") : setMode("light");
     setTimeout(() => {
-      links.forEach((link) => (link.style.transition = null));
+      links.forEach((link) => (link.style.transition = "all 0.1s ease-in-out"));
     }, 300);
   };
 

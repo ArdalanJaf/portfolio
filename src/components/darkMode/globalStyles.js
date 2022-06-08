@@ -14,9 +14,7 @@ export const GlobalStyles = createGlobalStyle`
 
   .cv {
     color: ${({ theme }) => theme.body};
-    transition: color 0.3s ease-in-out;
     background-color: ${({ theme }) => theme.text};
-
   }
 
   header {
@@ -44,12 +42,22 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .gitBackSVG svg {
-    stroke: ${({ theme }) => theme.text}
+    stroke: ${({ theme }) => theme.text};
   }
 
   button, .msgSentNotification p {
     color: ${({ theme }) => theme.body};
   }
+
+  .themeToggler {
+  background: ${({ theme }) => theme.text};
+  border: 0px solid ${({ theme }) => theme.toggleBorder};
+}
+
+  .themeToggler svg {
+    fill: ${({ theme }) => theme.body};
+  }
+
   `;
 
 // All code taken and modified from https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/

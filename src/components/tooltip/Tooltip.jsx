@@ -1,19 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./tooltip.css";
 
 const Tooltip = (props) => {
   let timeout;
   const [active, setActive] = useState(false);
+  const [hover, setHover] = useState(false);
+
+  useEffect(() => {
+    if (hover === true) {
+      timeout = setTimeout(() => {
+        setActive(true);
+      }, props.delay || 600);
+    }
+    return () => {
+      clearTimeout(timeout);
+      setActive(false);
+    };
+  }, [hover]);
 
   const showTip = () => {
-    timeout = setTimeout(() => {
-      setActive(true);
-    }, props.delay || 0);
+    // timeout = setTimeout(() => {
+    //   setActive(true);
+    // }, props.delay || 400);
+    setHover(true);
   };
 
   const hideTip = () => {
-    clearTimeout(timeout);
-    setActive(false);
+    // clearTimeout(timeout);
+    // setActive(false);
+    setHover(false);
   };
 
   return (

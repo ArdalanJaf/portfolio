@@ -27,8 +27,6 @@ function Intro() {
     return () => clearInterval(id);
   }, [index, animatedName]);
 
-  // console.log(animatedName);
-
   return (
     <section className="intro">
       <div>

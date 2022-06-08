@@ -10,7 +10,7 @@ function ContactForm() {
   const joiErrors = useSelector((state) => state.joiErrors);
   const formData = useSelector((state) => state.formData);
   const dispatch = useDispatch();
-  const [messageSent, setMessageSent] = useState(true);
+  const [messageSent, setMessageSent] = useState(false);
 
   // Send user-inputs to back-end.
   const sendFormData = async (payload) => {
@@ -53,9 +53,15 @@ function ContactForm() {
     >
       <input type="text" name="name" id="name" placeholder="YOUR NAME" />
       {joiErrors.name && <JoiErrorNote inputName={"name"} />}
+      <label hidden for="name">
+        Your name.
+      </label>
 
       <input type="email" name="email" id="email" placeholder="YOUR EMAIL" />
       {joiErrors.email && <JoiErrorNote inputName={"email"} />}
+      <label hidden for="email">
+        Your email address.
+      </label>
 
       <textarea
         className="textbox"
@@ -64,6 +70,9 @@ function ContactForm() {
         rows="6"
         placeholder="YOUR MESSAGE"
       />
+      <label hidden for="message">
+        Your message.
+      </label>
       {joiErrors.message && <JoiErrorNote inputName={"message"} />}
 
       <button
