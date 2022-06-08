@@ -1,6 +1,6 @@
 # Ardalan Al-Jaf - Portfolio
 
-Fully responsive 1-page [portfolio website](www.ardalanjaf.com) with [back-end](https://github.com/ArdalanJaf/portfolio-back#readme).
+Fully responsive 1-page [portfolio website](www.ardalanjaf.com) with [back-end](https://github.com/ArdalanJaf/portfolio-back).
 
 Designed to be very easy to navigate, with recruiters and employers in mind (who will likely only have 30-60s to view each candidate).
 
