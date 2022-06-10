@@ -2,7 +2,7 @@ import React from "react";
 import Skills from "./Skills";
 
 function About() {
-  const image = require("../assets/IMG_4566.jpg");
+  const image = require("../assets/IMG_4566.png");
 
   return (
     <section className="section about" id="about">
