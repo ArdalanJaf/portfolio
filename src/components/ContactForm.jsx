@@ -16,7 +16,8 @@ function ContactForm() {
   const sendFormData = async (payload) => {
     try {
       const result = await axios.post(API_URL + "/messaging", payload);
-      console.log("results: ", result);
+      // console.log("results: ", result);
+      document.getElementById("contactForm").reset();
 
       // notify user that API is down, advise to email me.
       if (result.data.status === 0) {
@@ -44,6 +45,7 @@ function ContactForm() {
   return (
     <form
       className="contactForm animateOnScroll fadeUp"
+      id="contactForm"
       onInput={(e) => {
         dispatch({
           type: types.SET_FORM_DATA,
