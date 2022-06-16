@@ -1,0 +1,39 @@
+.arrows {
+  display: flex;
+  flex-direction: column;
+  //   border: 1px blue solid;
+  //   height: 63px;
+  //   width: 60px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out;
+  svg {
+    // position: absolute;
+    // animation-name: fadeDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    // fill: #fff;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    // width: 10px;
+    // top: 0;
+    margin-top: 0;
+    // opacity: 0;
+    fill: #000000;
+  }
+
+  to {
+    // width: 60px;
+    // top: 50px;
+    margin-top: 42px;
+    // opacity: 1;
+    fill: #f2c40a;
+  }
+}

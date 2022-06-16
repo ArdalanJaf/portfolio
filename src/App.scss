@@ -156,6 +156,9 @@ nav {
   position: relative;
   h1 {
     margin-bottom: 5px;
+    span {
+      color: $highlightColor;
+    }
   }
   .linkContainer {
     display: flex;

@@ -3,6 +3,7 @@ import Links from "./Links";
 import { genCodeWords } from "../utils/codeWordGenerator";
 import Toggle from "./darkMode/Toggler";
 import { useDarkMode } from "./darkMode/useDarkMode";
+import Arrows from "./arrows/Arrows";
 
 function Intro() {
   const targetName = "ARDALAN AL-JAF";
@@ -31,15 +32,16 @@ function Intro() {
     <section className="intro">
       <div>
         <h1>
-          {animatedName} <br />
+          <span>{animatedName}</span> <br />
           FULL-STACK <br />
-          SOFTWARE-ENGINEER
+          DEVELOPER
         </h1>
         <div className="linkContainer">
           <Links />
           <Toggle theme={theme} toggleTheme={themeToggler} />
         </div>
       </div>
+      <Arrows />
     </section>
   );
 }

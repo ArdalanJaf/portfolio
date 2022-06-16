@@ -12,7 +12,7 @@ function Links(props) {
         rel="noreferrer"
         className={props.header ? "cv cvShort" : "cv"}
       >
-        <span className="cvIcon">{props.header ? "CV" : "RESUMÉ"}</span>
+        <span className="cvIcon">{props.header ? "CV" : "RESUME"}</span>
       </a>
 
       <a href="mailto:contact@ardalanjaf.com" target="_blank" rel="noreferrer">
