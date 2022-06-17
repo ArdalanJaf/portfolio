@@ -55,13 +55,13 @@ function ContactForm() {
     >
       <input type="text" name="name" id="name" placeholder="YOUR NAME" />
       {joiErrors.name && <JoiErrorNote inputName={"name"} />}
-      <label hidden for="name">
+      <label hidden htmlFor="name">
         Your name.
       </label>
 
       <input type="email" name="email" id="email" placeholder="YOUR EMAIL" />
       {joiErrors.email && <JoiErrorNote inputName={"email"} />}
-      <label hidden for="email">
+      <label hidden htmlFor="email">
         Your email address.
       </label>
 
@@ -72,7 +72,7 @@ function ContactForm() {
         rows="6"
         placeholder="YOUR MESSAGE"
       />
-      <label hidden for="message">
+      <label hidden htmlFor="message">
         Your message.
       </label>
       {joiErrors.message && <JoiErrorNote inputName={"message"} />}
