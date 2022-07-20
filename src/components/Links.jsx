@@ -1,7 +1,7 @@
 import React from "react";
 import { icons } from "../config/icons";
 import Tooltip from "./tooltip/Tooltip";
-import pdf from "../assets/CV - Ardalan Al-Jaf";
+import pdf from "../assets/CV - Ardalan Al-Jaf.pdf";
 
 function Links(props) {
   return (

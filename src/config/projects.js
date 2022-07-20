@@ -3,13 +3,13 @@ export const projects = [
     name: "Find Sparks",
     links: {
       git: "https://github.com/ArdalanJaf/find-sparks",
-      site: "https://findsparks.uk/",
+      site: "https://findsparks.ardalanjaf.com/",
       gitBack: "https://github.com/ArdalanJaf/find-sparks-back",
     },
     notes:
-      "A dating app created to showcase front and back-end abilities. Features include multi-user log-in middleware authentification and a unique points-based matching algorithm. Demo login details: email = 'a@a.com' | password = 'password'",
+      "A dating app created to showcase front and back-end abilities. Features include multi-user log-in middleware authentification and a unique points-based matching algorithm. Demo login details: email = 'a@a.com', password = 'password'",
     image: "findsparks.png",
-    tech: "React - Redux | Node.js - Express | SQL | Bootstrap",
+    tech: "React | Redux | Node.js | REST | SQL | Bootstrap",
   },
   {
     name: "ReadEasy",
@@ -29,7 +29,7 @@ export const projects = [
       site: "https://ardalan-weather-app.netlify.app/",
     },
     notes:
-      "Fully-responsive weather app that demonstrates my ability to utilise APIs using axios. It uses openMapGL and open-weather-map to provide an 8-day forecast for anywhere in the world.",
+      "Fully-responsive weather app that demonstrates my ability to utilise APIs using REST. It uses openMapGL and open-weather-map to provide an 8-day forecast for anywhere in the world.",
     image: "weatherApp.png",
     tech: "JS | REST | HTML | SASS",
   },
