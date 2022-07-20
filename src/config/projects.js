@@ -20,7 +20,7 @@ export const projects = [
     notes:
       "This app was made in a team of four as part of a hackathon challenge. The goal was to produce an app in 6 hours to help children learning to read. Through using a text-to-speech API, users are encouraged to practice pronunciation.",
     image: "readeasy.png",
-    tech: "React | Axios | JS | SASS | GSAP ",
+    tech: "React | REST | JS | SASS | GSAP ",
   },
   {
     name: "Weather App",
@@ -31,7 +31,7 @@ export const projects = [
     notes:
       "Fully-responsive weather app that demonstrates my ability to utilise APIs using axios. It uses openMapGL and open-weather-map to provide an 8-day forecast for anywhere in the world.",
     image: "weatherApp.png",
-    tech: "HTML | Axios | JS | SASS",
+    tech: "JS | REST | HTML | SASS",
   },
   {
     name: "Nowness Homage",
