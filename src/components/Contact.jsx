@@ -9,9 +9,9 @@ function Contact() {
         <div className="contactText animateOnScroll fadeUp">
           {" "}
           <p>
-            If you have any questions about me, my projects or the meaning of
-            life, please feel free to send me a message and I will get back to
-            you swiftly.
+            If you have any questions about me, my projects, a project I can
+            build for you or even something else entirely, please send me a
+            message and I will get back to you shortly.
           </p>
           <p>
             <br></br>

@@ -21,6 +21,7 @@ function ContactForm() {
 
       // notify user that API is down, advise to email me.
       if (result.data.status === 0) {
+        console.log(result);
         alert("API error: " + result.data.error);
 
         // notify user of errors

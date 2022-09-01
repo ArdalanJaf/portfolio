@@ -12,31 +12,25 @@ function About() {
           <img src={image} alt="me!"></img>
         </div>
         <div className="aboutText animateOnScroll fadeUp">
-          {/* 
-          1.can you do the job?
-          2.Will you be a good team player?
-          3. how quickly can you learn/progress?  
-          ttRPGs (nerdy), (social?), ()
-          */}
           <p>
             Hello World! <br />
             <br></br>
             I'm Ardalan Al-Jaf, an <span>energetic</span> and{" "}
-            <span>detail-orientated</span> software developer born and based in
-            London.
+            <span>detail-orientated</span> software engineer born and raised in
+            South-East London.
           </p>
           <br></br>
           <p>
-            I bring over a decade of diverse experience in <span>learning</span>
-            , <span>team-work</span> and <span>problem-solving</span> from
-            various fields to software-engineering.
+            I'm a <span>commited</span> and <span>empathetic</span>{" "}
+            collaborator, bringing over a decade of diverse experience in{" "}
+            <span>learning</span>, <span>communication</span> and{" "}
+            <span>problem-solving</span> to software-engineering.
           </p>
           <br></br>
           <p>
-            Aside from coding, I enjoy <span>building with my hands</span>,{" "}
-            <span>doodling</span>, grabbing{" "}
-            <span>street-food with friends</span> and{" "}
-            <span>table-top role playing games</span>.
+            Outside of coding, I enjoy creative pursuits, traveling, keeping
+            physically active and meeting interesting people whilst exploring
+            niche sub-cultures.
           </p>
         </div>
       </div>

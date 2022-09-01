@@ -33,7 +33,7 @@ function Header() {
       <div className="headerContainer">
         {/* <div className=".navContainer"> */}
         <a href="https://www.ardalanjaf.com/">
-          <h2>ARDALAN</h2>
+          <h2>ARDALAN JAF</h2>
         </a>
         <Nav />
         {/* </div> */}

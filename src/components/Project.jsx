@@ -17,7 +17,7 @@ function Project(props) {
         <div className="projectInfo animateOnScroll fadeUp">
           <h3>{project.name}</h3>
 
-          <p>{project.notes}</p>
+          {project.notes}
 
           <p className="tech">{project.tech}</p>
 
