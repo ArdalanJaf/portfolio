@@ -9,6 +9,12 @@ export function reducer(state = initialState, action) {
       const results = { ...state, formData };
       return results;
     }
+    case types.CLEAR_FORM_DATA: {
+      let formData = { ...state.formData };
+      formData = { email: "", name: "", message: "" };
+      const results = { ...state, formData };
+      return results;
+    }
     case types.SET_JOI_ERRORS: {
       let joiErrors = { ...state.joiErrors };
       joiErrors = action.payload.joiErrors;

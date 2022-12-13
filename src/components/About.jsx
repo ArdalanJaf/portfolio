@@ -13,8 +13,6 @@ function About() {
         </div>
         <div className="aboutText animateOnScroll fadeUp">
           <p>
-            Hello World! <br />
-            <br></br>
             I'm Ardalan Al-Jaf, an <span>energetic</span> and{" "}
             <span>detail-orientated</span> software engineer born and raised in
             South-East London.
@@ -28,9 +26,8 @@ function About() {
           </p>
           <br></br>
           <p>
-            Outside of coding, I enjoy creative pursuits, traveling, keeping
-            physically active and meeting interesting people whilst exploring
-            niche sub-cultures.
+            Outside of coding, I enjoy building things, drawing, traveling,
+            (engaging) exercise and rolling dice in ttRPGs.
           </p>
         </div>
       </div>

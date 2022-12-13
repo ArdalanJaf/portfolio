@@ -1,5 +1,5 @@
-import "./normalize.css";
-import "./App.scss";
+import "./styles/normalize.css";
+import "./styles/App.scss";
 import "./utils/animateElements/animateElements.css";
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
