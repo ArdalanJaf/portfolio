@@ -19,7 +19,8 @@ function Project(props) {
 
           {project.notes}
 
-          <p className="tech">{project.tech}</p>
+          {/* <p className="tech">{project.tech}</p> */}
+          {project.tech}
 
           <div className="projectLinks">
             <a

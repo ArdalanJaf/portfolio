@@ -1,5 +1,9 @@
 export function genCodeWords(target) {
-  let codeLetters = "#$%&@§10" + target.replace(" ", "").replace("-", "");
+  // let codeLetters = "#$%&@§10" + target.replace(" ", "").replace("-", "");
+  let codeLetters =
+    "!@#$%&±§QWERTYUIOPASDFGHJKLZXCVBNM1234567890" +
+    target.replace(" ", "").replace("-", "");
+
   let codeArr = [];
   function randomInt(max) {
     return Math.floor(Math.random() * max);

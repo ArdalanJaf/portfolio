@@ -1,6 +1,6 @@
 export const projects = [
   {
-    name: "Klover-Health",
+    name: "Klover Healthcare",
     links: {
       site: "https://klover-demo.ardalanjaf.com/",
       git: "https://github.com/ArdalanJaf/klover-health",
@@ -10,14 +10,18 @@ export const projects = [
       <p className="projectNotes">
         Commissioned site for mental-health assessment service. Features include
         dynamic appointment time generation, integrated Stripe online payments,
-        contact form, full responsibity and{" "}
+        contact form, fully-responsive and{" "}
         <a href="https://klover-demo.ardalanjaf.com/admin">admin interface</a>{" "}
         for client to control time slots, pricing, contact details and create
         payment links.
       </p>
     ),
     image: "klover.png",
-    tech: "React - Redux - Bootstrap - Stripe API - NodeJS - Express - SQL",
+    tech: (
+      <p className="tech">
+        React/Redux | Bootstrap | Stripe API | NodeJS | SQL
+      </p>
+    ),
   },
   {
     name: "Carbon-Offset Simulator",
@@ -35,7 +39,13 @@ export const projects = [
       </p>
     ),
     image: "carbonoffset.png",
-    tech: "React - Redux - react-hook-form - recharts - styled-components - NodeJS - SQL",
+    tech: (
+      <p className="tech">
+        React/Redux | React-hook-form | Recharts |{" "}
+        <span style={{ display: "inline-block" }}>Styled-components</span> |
+        NodeJS | SQL
+      </p>
+    ),
   },
   {
     name: "Find Sparks",
@@ -53,7 +63,7 @@ export const projects = [
       </p>
     ),
     image: "findsparks.png",
-    tech: "React - Redux - NodeJS - Express - SQL - Bootstrap",
+    tech: <p className="tech">React/Redux | NodeJS | SQL | Bootstrap</p>,
   },
   {
     name: "Portfolio",
@@ -70,7 +80,7 @@ export const projects = [
       </p>
     ),
     image: "portfolio.png",
-    tech: "React - Redux - NodeJS - Express - SQL - SASS",
+    tech: <p className="tech">React/Redux | NodeJS | SQL | SASS</p>,
   },
   {
     name: "Read Easy",
@@ -87,7 +97,7 @@ export const projects = [
       </p>
     ),
     image: "readeasy.png",
-    tech: "React - REST - JS - SASS - GSAP ",
+    tech: <p className="tech">React | JS | SASS | GSAP</p>,
   },
   {
     name: "Weather App",
@@ -103,7 +113,7 @@ export const projects = [
       </p>
     ),
     image: "weather.png",
-    tech: "JS - REST - HTML - SASS",
+    tech: <p className="tech">JS | REST | HTML | SASS</p>,
   },
   {
     name: "Nowness Homage",
@@ -118,6 +128,6 @@ export const projects = [
       </p>
     ),
     image: "nowness.png",
-    tech: "HTML - SASS",
+    tech: <p className="tech">HTML | SASS</p>,
   },
 ];

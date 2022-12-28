@@ -18,13 +18,13 @@ function Intro() {
       if (index < codeWordArr.length) {
         let current = codeWordArr[index];
         setAnimatedName(current);
-      } else if (index > 35) {
+      } else if (index > 33) {
         setIndex(0);
         setCodeWordArr(genCodeWords(targetName));
       } else {
         return;
       }
-    }, 100);
+    }, 95);
     return () => clearInterval(id);
   }, [index, animatedName]);
 

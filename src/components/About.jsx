@@ -27,7 +27,7 @@ function About() {
           <br></br>
           <p>
             Outside of coding, I enjoy building things, drawing, traveling,
-            (engaging) exercise and rolling dice in ttRPGs.
+            exercise, politics and rolling dice in ttRPGs.
           </p>
         </div>
       </div>

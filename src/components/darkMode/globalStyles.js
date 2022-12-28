@@ -17,10 +17,11 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.text};
   }
 
-  header {
+  header .headerContainer {
     background-color: ${({ theme }) => theme.body};
     transition: background-color 0.30s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
   }
 
   header .headerContainer a {

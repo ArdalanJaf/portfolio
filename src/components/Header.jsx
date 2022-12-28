@@ -21,23 +21,21 @@ function Header() {
   }, []);
 
   return (
-    <header
-      className={
-        scrollPosition.now < window.innerHeight * 0.5
-          ? "hideHeader"
-          : scrollPosition.now > scrollPosition.prev
-          ? "hideHeader"
-          : ""
-      }
-    >
-      <div className="headerContainer">
-        {/* <div className=".navContainer"> */}
+    <header>
+      <div
+        className={`headerContainer ${
+          scrollPosition.now < window.innerHeight * 0.6
+            ? "hideHeader"
+            : scrollPosition.now > scrollPosition.prev
+            ? "hideHeader"
+            : ""
+        }`}
+      >
         <a href="https://www.ardalanjaf.com/">
           <h2>ARDALAN JAF</h2>
         </a>
         <Nav />
         {/* </div> */}
-
         <Links header={true} />
       </div>
     </header>

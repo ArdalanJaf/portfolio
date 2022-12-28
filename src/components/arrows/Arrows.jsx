@@ -14,9 +14,7 @@ function Arrows() {
   return (
     <div
       className={
-        scrollPosition.now < window.innerHeight * 0.1
-          ? "arrows"
-          : "arrows hideHeader"
+        scrollPosition.now < window.innerHeight * 0.1 ? "arrows" : "arrows hide"
       }
       onClick={() => scrollTo("projects")}
     >
