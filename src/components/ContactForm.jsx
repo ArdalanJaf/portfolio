@@ -104,7 +104,7 @@ function ContactForm() {
         className="textbox"
         name="message"
         id="message"
-        rows="6"
+        rows="8"
         placeholder="Your message..."
         value={formData.message}
         onInput={(e) => {

@@ -2,18 +2,18 @@ export const projects = [
   {
     name: "Klover Healthcare",
     links: {
-      site: "https://klover-demo.ardalanjaf.com/",
+      site: "https://kloverhealthcare.com/",
       git: "https://github.com/ArdalanJaf/klover-health",
       gitBack: "https://github.com/ArdalanJaf/klover-health-api",
     },
     notes: (
       <p className="projectNotes">
-        Commissioned site for mental-health assessment service. Features include
-        dynamic appointment time generation, integrated Stripe online payments,
-        contact form, fully-responsive and{" "}
-        <a href="https://klover-demo.ardalanjaf.com/admin">admin interface</a>{" "}
-        for client to control time slots, pricing, contact details and create
-        payment links.
+        Commissioned site for mental-health assessment service, design brief:
+        clear & clean. Features include dynamic appointment time generation,
+        integrated Stripe online payments, contact form, fully-responsive and{" "}
+        admin interface (
+        <a href="https://klover-demo.ardalanjaf.com/admin">demo</a>) for client
+        to control mutable properties.
       </p>
     ),
     image: "klover.png",
@@ -41,7 +41,7 @@ export const projects = [
     image: "carbonoffset.png",
     tech: (
       <p className="tech">
-        React/Redux | React-hook-form | Recharts |{" "}
+        React/Redux | REST | React-hook-form | Recharts |{" "}
         <span style={{ display: "inline-block" }}>Styled-components</span> |
         NodeJS | SQL
       </p>
@@ -65,23 +65,23 @@ export const projects = [
     image: "findsparks.png",
     tech: <p className="tech">React/Redux | NodeJS | SQL | Bootstrap</p>,
   },
-  {
-    name: "Portfolio",
-    links: {
-      git: "https://github.com/ArdalanJaf/portfolio",
-      site: "https://ardalanjaf.com/",
-      gitBack: "https://github.com/ArdalanJaf/portfolio-back",
-    },
-    notes: (
-      <p className="projectNotes">
-        <u>This</u> fully-adaptive website is designed to feel clean and smooth
-        but with (my) personality. Includes a JS-based text-animator, theme
-        toggler and server-side mailer.
-      </p>
-    ),
-    image: "portfolio.png",
-    tech: <p className="tech">React/Redux | NodeJS | SQL | SASS</p>,
-  },
+  // {
+  //   name: "Portfolio",
+  //   links: {
+  //     git: "https://github.com/ArdalanJaf/portfolio",
+  //     site: "https://ardalanjaf.com/",
+  //     gitBack: "https://github.com/ArdalanJaf/portfolio-back",
+  //   },
+  //   notes: (
+  //     <p className="projectNotes">
+  //       <u>This</u> fully-responsive website is designed to feel clean and
+  //       smooth but with (my) personality. Includes a JS-based text-animator,
+  //       theme toggler and server-side mailer.
+  //     </p>
+  //   ),
+  //   image: "portfolio.png",
+  //   tech: <p className="tech">React/Redux | NodeJS | SQL | SASS</p>,
+  // },
   {
     name: "Read Easy",
     links: {
@@ -97,7 +97,7 @@ export const projects = [
       </p>
     ),
     image: "readeasy.png",
-    tech: <p className="tech">React | JS | SASS | GSAP</p>,
+    tech: <p className="tech">React | SASS | GSAP</p>,
   },
   {
     name: "Weather App",
