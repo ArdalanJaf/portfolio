@@ -4,18 +4,27 @@ import Tooltip from "./tooltip/Tooltip";
 
 function Skills() {
   return (
-    <div className="skills animateOnScroll fadeUp">
-      {/* <h3>SKILLS</h3> */}
-      <div className="skillsList">
-        {Object.keys(icons.skills).map((skill, index) => {
-          return (
-            <Tooltip content={skill} delay="0" key={index}>
-              {icons.skills[skill]}
-            </Tooltip>
-          );
-        })}
-      </div>
+    <section className="s" id="skills">
+      <h2>SKILLS</h2>
+    <div className="animateOnScroll fadeUp skillsListsContainer">
+      {Object.keys(icons.skills).map((skillGroupKey => {
+        return (
+          <div className="skillsList">
+            <h3>{skillGroupKey}</h3>
+          {Object.keys(icons.skills[skillGroupKey]).map((skill, index) => {
+            return (
+              <div>
+              <Tooltip content={skill} delay="0" key={index}>
+                {icons.skills[skillGroupKey][skill]}
+              </Tooltip></div>
+            );
+          })}
+        </div>
+        )
+      }))}
+     
     </div>
+     </section>
   );
 }
 

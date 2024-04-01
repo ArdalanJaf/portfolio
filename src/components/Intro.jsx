@@ -33,12 +33,12 @@ function Intro() {
       <div>
         <h1>
           <span>{animatedName}</span> <br />
-          FULL-STACK <br />
+          FRONT END <br />
           ENGINEER
         </h1>
         <div className="linkContainer">
           <Links />
-          <Toggle theme={theme} toggleTheme={themeToggler} />
+         
         </div>
       </div>
       <Arrows />

@@ -15,7 +15,8 @@ function Project(props) {
         </div>
 
         <div className="projectInfo animateOnScroll fadeUp">
-          <h3>{project.name}</h3>
+        <h3><a href={project.links.site} target="_blank" rel="noreferrer">
+ {project.name}</a></h3>
 
           {project.notes}
 

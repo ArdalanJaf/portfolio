@@ -2,8 +2,12 @@ import React from "react";
 import { icons } from "../config/icons";
 import Tooltip from "./tooltip/Tooltip";
 import pdf from "../assets/CV - Ardalan Al-Jaf.pdf";
+import Toggle from "./darkMode/Toggler";
+import { useDarkMode } from "./darkMode/useDarkMode";
 
 function Links(props) {
+  const [theme, themeToggler] = useDarkMode();
+
   return (
     <div className="links">
       <a
@@ -14,11 +18,6 @@ function Links(props) {
       >
         <span className="cvIcon">{props.header ? "CV" : "RESUME"}</span>
       </a>
-
-      <a href="mailto:contact@ardalanjaf.com" target="_blank" rel="noreferrer">
-        <Tooltip content="contact@ardalanjaf.com">{icons.email}</Tooltip>
-      </a>
-
       <a href="https://github.com/ArdalanJaf" target="_blank" rel="noreferrer">
         {icons.gitHub}
       </a>
@@ -29,6 +28,10 @@ function Links(props) {
       >
         {icons.linkedIn}
       </a>
+      <a href="#contact"  rel="noreferrer">
+        <Tooltip content="contact@ardalanjaf.com">{icons.email}</Tooltip>
+      </a>
+      <Toggle theme={theme} toggleTheme={themeToggler} />
     </div>
   );
 }

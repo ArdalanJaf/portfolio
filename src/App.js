@@ -16,6 +16,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/darkMode/globalStyles";
 import { lightTheme, darkTheme } from "./components/darkMode/themes";
 import { useDarkMode } from "./components/darkMode/useDarkMode";
+import Skills from "./components/Skills";
 
 function App() {
   const scrollPosition = useSelector((state) => state.scrollPosition);
@@ -34,6 +35,7 @@ function App() {
         <Header />
         <div className="container">
           <Intro />
+          <Skills />
           <Projects />
           <About />
           <Contact />
