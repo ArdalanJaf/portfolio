@@ -26,7 +26,8 @@ export const projects = [
   {
     name: "Carbon-Offset Simulator",
     links: {
-      site: "https://carbon-offset-simulator.ardalanjaf.com/",
+      // site: "https://carbon-offset-simulator.ardalanjaf.com/",
+      site: "https://kloverhealthcare.com/",
       git: "https://github.com/ArdalanJaf/Carbon-Offset-Calculator",
       gitBack: "https://github.com/ArdalanJaf/API-Carbon-Offset-Calculator",
     },
