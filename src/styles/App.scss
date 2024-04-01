@@ -34,6 +34,15 @@ h1 {
 
 h3 {
   font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+h4,
+h3 {
   color: $highlightColor;
 }
 
@@ -48,7 +57,8 @@ section {
   h2 {
     font-size: 25px;
     width: fit-content;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10%;
     border-bottom: 2px solid $highlightColor;
   }
@@ -222,6 +232,46 @@ header .hideHeader {
   }
 }
 
+// SKILLS
+.skills {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillsListsContainer {
+  height: inherit;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.skillList {
+  h4 {
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  .skillsListIcons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    svg {
+      width: 48px;
+      height: 48px;
+      transition: 0.1s;
+      &:hover {
+        transform: scale(1.05);
+        // filter: drop-shadow(0 0 0.5rem $highlightColor);
+      }
+    }
+  }
+}
+
 // PROJECTS
 .projects {
   position: relative;
@@ -339,40 +389,6 @@ header .hideHeader {
   }
 }
 
-// .skills h3 {
-//   text-align: center;
-// }
-
-.skills {
-  position: relative;
-}
-
-.skillsListsContainer {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.skillsList {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  // grid-template: repeat(2, 1fr) / repeat(6, 1fr);
-  gap: 1%;
-  padding: 5%;
-  // margin-top: 5%;
-  svg {
-    width: 48px !important;
-    height: 48px !important;
-    transition: 0.1s;
-    &:hover {
-      transform: scale(1.2);
-      // filter: drop-shadow(0 0 0.5rem $highlightColor);
-    }
-  }
-}
-
 .contact {
   min-height: 90vh;
 }
@@ -439,7 +455,7 @@ header .hideHeader {
 .msgSentNotification {
   padding: 0;
   p {
-    background-color: rgb(1, 193, 1);
+    background-color: #0263ff;
     border-radius: 5px;
     margin: auto;
     padding: 10px;
@@ -458,6 +474,10 @@ footer {
   padding: 2.5%;
   font-size: 0.8em;
   opacity: 0.7;
+}
+
+.Tooltip-Tip::before {
+  content: none !important;
 }
 
 @media (min-width: 400px) {
@@ -487,15 +507,14 @@ footer {
   nav {
     display: block;
   }
-  .skillsList {
-    // display: flex;
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   p {
     padding: 0 10%;
+  }
+
+  .skillsListIcons svg {
+    width: 64px !important;
+    height: 64px !important;
   }
 }
 
@@ -545,13 +564,6 @@ footer {
 
   .aboutText p {
     text-align: left;
-  }
-
-  .skillsList {
-    margin: 0;
-    display: flex;
-    max-width: 100%;
-    // margin-top: 5%;
   }
 
   .flexContainer {

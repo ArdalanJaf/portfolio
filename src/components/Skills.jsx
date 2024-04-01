@@ -4,13 +4,14 @@ import Tooltip from "./tooltip/Tooltip";
 
 function Skills() {
   return (
-    <section className="s" id="skills">
+    <section className="skills" id="skills">
       <h2>SKILLS</h2>
     <div className="animateOnScroll fadeUp skillsListsContainer">
       {Object.keys(icons.skills).map((skillGroupKey => {
         return (
-          <div className="skillsList">
-            <h3>{skillGroupKey}</h3>
+          <div className="skillList">
+                        <h4>{skillGroupKey}</h4>
+          <div className="skillsListIcons">
           {Object.keys(icons.skills[skillGroupKey]).map((skill, index) => {
             return (
               <div>
@@ -19,7 +20,8 @@ function Skills() {
               </Tooltip></div>
             );
           })}
-        </div>
+        </div>          </div>
+
         )
       }))}
      
