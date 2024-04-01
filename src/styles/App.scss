@@ -67,7 +67,7 @@ section {
 
 header {
   position: fixed;
-  top: 0;
+  bottom: 0;
   margin: 0;
   z-index: 1;
   width: 100vw;
@@ -78,9 +78,9 @@ header {
     align-items: center;
     padding: 5px;
     margin: auto;
-    border-bottom: solid 2px;
+    border-top: solid 2px;
     // transition: transform 0.03s ease-in; in gloablStyles.js
-    box-shadow: rgb(0 0 0 / 50%) 1px 10px 15px;
+    box-shadow: rgb(0 0 0 / 40%) 1px 10px 15px;
     a {
       color: #000;
       text-decoration: none;
@@ -105,7 +105,7 @@ nav {
       margin-left: 10px;
     }
     &:hover {
-      transform: scale(0.9);
+      transform: scale(0.95);
     }
   }
 }
@@ -115,7 +115,7 @@ nav {
 }
 
 header .hideHeader {
-  transform: translate(0, -100%);
+  transform: translate(0, 100%);
   box-shadow: 0 0 0 0;
 }
 
@@ -481,10 +481,6 @@ footer {
   //   font-size: 28px;
   // }
 
-  nav {
-    display: block;
-  }
-
   p {
     padding: 0 10%;
   }
@@ -496,6 +492,20 @@ footer {
 }
 
 @media (min-width: 800px) {
+  header {
+    top: 0;
+    .headerContainer {
+      border-bottom: solid 2px;
+      border-top: none;
+    }
+    .hideHeader {
+      transform: translate(0, -100%);
+    }
+  }
+  nav {
+    display: block;
+  }
+
   .intro {
     padding: 10%;
   }

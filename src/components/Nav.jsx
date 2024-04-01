@@ -34,7 +34,9 @@ function Header() {
 
   return (
     <nav>
-      <a className="nav navProjects" href="#projects">
+      <a className="nav navSkills" href="#skills">
+        SKILLS
+      </a>  <a className="nav navProjects" href="#projects">
         PROJECTS
       </a>
       <a className="nav navAbout" href="#about">

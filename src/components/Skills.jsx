@@ -4,7 +4,7 @@ import Tooltip from "./tooltip/Tooltip";
 
 function Skills() {
   return (
-    <section className="skills" id="skills">
+    <section className="section skills" id="skills">
       <h2>SKILLS</h2>
     <div className="skillsListsContainer">
       {Object.keys(icons.skills).map((skillGroupKey => {
