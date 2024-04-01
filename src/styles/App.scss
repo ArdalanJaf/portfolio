@@ -387,7 +387,7 @@ header .hideHeader {
 .contactForm {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 28px;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -400,9 +400,15 @@ header .hideHeader {
   font-family: inherit;
   border-radius: 5px;
   border-style: none;
-  // border: 1px solid rgba(0, 0, 0, 0.6);
-  &:focus {
+  &:focus:not(.inputErrorBorder) {
     outline: 2px solid $highlightColor;
+  }
+}
+
+.inputErrorBorder {
+  outline: solid 1px red;
+  &:focus {
+    outline: solid 2px red;
   }
 }
 
@@ -420,6 +426,14 @@ header .hideHeader {
   &:hover {
     transform: scale(0.9);
   }
+}
+
+.joiErrorMsg {
+  position: absolute;
+
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
 }
 
 .msgSentNotification {
