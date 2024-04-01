@@ -2,16 +2,18 @@ export const lightTheme = {
   body: "#FFFFFF",
   text: "#000000",
   toggleBorder: "rgb(242, 196, 10)",
-  toggleBackground: "rgb(47, 116, 200)",
-  highlight: "rgb(242, 196, 10)",
+  toggleBackground: "rgb(242, 196, 10)",
+  highlight: "rgb(36, 101, 242)",
+  inputBorder: "rgb(118, 118, 118)",
 };
 
 export const darkTheme = {
   body: "#000000",
   text: "#FFFFFF",
   toggleBorder: "rgb(47, 116, 200)",
-  toggleBackground: "rgb(242, 196, 10)",
-  highlight: "rgb(75, 108, 180)",
+  toggleBackground: "rgb(36, 101, 242)",
+  highlight: "rgb(242, 196, 10)",
+  inputBorder: "none",
 };
 
 // All code taken and modified from https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/

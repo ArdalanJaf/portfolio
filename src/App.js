@@ -21,7 +21,7 @@ import Skills from "./components/Skills";
 function App() {
   const scrollPosition = useSelector((state) => state.scrollPosition);
 
-  const [theme, themeToggler] = useDarkMode();
+  const [theme] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   useEffect(() => {

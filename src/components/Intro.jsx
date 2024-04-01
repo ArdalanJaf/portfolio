@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Links from "./Links";
 import { genCodeWords } from "../utils/codeWordGenerator";
-import Toggle from "./darkMode/Toggler";
-import { useDarkMode } from "./darkMode/useDarkMode";
 import Arrows from "./arrows/Arrows";
 
 function Intro() {
@@ -10,7 +8,6 @@ function Intro() {
   const [codeWordArr, setCodeWordArr] = useState(genCodeWords(targetName));
   const [index, setIndex] = useState(0);
   const [animatedName, setAnimatedName] = useState("");
-  const [theme, themeToggler] = useDarkMode();
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -26,6 +23,7 @@ function Intro() {
       }
     }, 95);
     return () => clearInterval(id);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, animatedName]);
 
   return (

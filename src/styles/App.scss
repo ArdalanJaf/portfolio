@@ -24,7 +24,6 @@ h3 {
   font-family: "Tahoma", Arial, Helvetica, sans-serif;
   a {
     text-decoration: none;
-    color: $highlightColor;
   }
 }
 
@@ -60,7 +59,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
-    border-bottom: 2px solid $highlightColor;
+    border-bottom: 2px solid;
   }
 }
 
@@ -79,7 +78,7 @@ header {
     align-items: center;
     padding: 5px;
     margin: auto;
-    border-bottom: solid 2px $highlightColor;
+    border-bottom: solid 2px;
     // transition: transform 0.03s ease-in; in gloablStyles.js
     box-shadow: rgb(0 0 0 / 50%) 1px 10px 15px;
     a {
@@ -112,7 +111,6 @@ nav {
 }
 
 .nav.active {
-  color: $highlightColor;
   font-weight: 600;
 }
 
@@ -140,19 +138,16 @@ header .hideHeader {
 
 .links a svg,
 .gitFrontSVG svg,
-.gitBackSVG svg {
+.gitBackSVG svg,
+.links .cv:hover {
   transition: all 0.1s ease-in-out;
 }
 
 .links a svg:hover,
-.gitFrontSVG svg:hover {
-  transform: scale(0.9);
-  fill: $highlightColor;
-}
-
+.gitFrontSVG svg:hover,
+.links .cv:hover,
 .gitBackSVG svg:hover {
   transform: scale(0.9);
-  stroke: $highlightColor;
 }
 
 .cv {
@@ -175,11 +170,6 @@ header .hideHeader {
   padding: 0 4px;
   margin-top: 2px;
 }
-.links .cv:hover {
-  transform: scale(0.9);
-  background-color: $highlightColor;
-}
-
 //INTRO
 .intro {
   display: flex;
@@ -188,9 +178,6 @@ header .hideHeader {
   h1 {
     margin-bottom: 5px;
     line-height: 1;
-    span {
-      color: $highlightColor;
-    }
   }
   .linkContainer {
     display: flex;
@@ -212,7 +199,6 @@ header .hideHeader {
   border: none;
   transition: all 0.1s ease-in-out;
   &:hover {
-    background-color: $highlightColor;
     transform: scale(0.9);
   }
   svg {
@@ -304,10 +290,7 @@ header .hideHeader {
     // height: 100%;
     transition: all 0.1s;
   }
-  &:hover img {
-    filter: drop-shadow(0 0 0.15rem $highlightColor);
-    transform: scale(1.01);
-  }
+
   .phone {
     width: 65%;
   }
@@ -333,15 +316,11 @@ header .hideHeader {
   // }
 
   h3 {
-    color: $highlightColor;
     margin-bottom: 0.5rem;
   }
 
   .projectNotes {
     line-height: 1.3;
-    a {
-      color: $highlightColor;
-    }
   }
 
   .tech {
@@ -372,7 +351,6 @@ header .hideHeader {
     text-align: center;
     span {
       font-weight: bold;
-      color: $highlightColor;
     }
   }
 }
@@ -415,10 +393,10 @@ header .hideHeader {
   padding: 8px;
   font-family: inherit;
   border-radius: 5px;
-  border-style: none;
-  &:focus:not(.inputErrorBorder) {
-    outline: 2px solid $highlightColor;
-  }
+  // border-style: none;
+  // &:focus:not(.inputErrorBorder) {
+  //   outline: 2px solid $highlightColor;
+  // }
 }
 
 .inputErrorBorder {
@@ -434,7 +412,6 @@ header .hideHeader {
   padding: 10px;
   font-size: 16px;
   font-weight: 600;
-  background-color: $highlightColor;
   border: none;
   border-radius: 10px;
   cursor: pointer;
