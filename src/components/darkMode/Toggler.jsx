@@ -6,7 +6,7 @@ const Toggle = ({ theme, toggleTheme }) => {
   return (
     // <Tooltip content={theme === "light" ? "dark mode" : "light mode"}>
     <button className="themeToggler" onClick={toggleTheme}>
-      {theme === "light" ? icons.theme.moon : icons.theme.sun}
+      {theme !== "light" ? icons.theme.moon : icons.theme.sun}
     </button>
     // </Tooltip>
   );

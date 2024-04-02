@@ -37,6 +37,10 @@ export const GlobalStyles = createGlobalStyle`
 
   }
 
+  header .headerContainer h2 {
+    color: ${({ theme }) => theme.highlight};
+  }
+
   header .headerContainer a {
     color: ${({ theme }) => theme.text};
   }
@@ -50,6 +54,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.text};
     
   }
+
 
   .gitFrontSVG svg {
     fill: ${({ theme }) => theme.text};
@@ -73,16 +78,15 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .themeToggler {
-  background: ${({ theme }) => theme.highlight};
-  border: 0px solid ${({ theme }) => theme.toggleBorder};
+  background: ${({ theme }) => theme.text};
 }
 
   .themeToggler svg {
-    fill: ${({ theme }) => theme.body};
+    fill: ${({ theme }) => theme.toggleBorder};
   }
 
-  .themeToggler:hover {
-    background-color: ${({ theme }) => theme.toggleBackground};
+  .themeToggler:hover svg {
+
   }
 
   .links .cv:hover {
@@ -93,8 +97,9 @@ export const GlobalStyles = createGlobalStyle`
     fill: ${({ theme }) => theme.highlight};
   }
 
-  .nav.active {
+  nav .nav:hover, .nav.active {
     color: ${({ theme }) => theme.highlight};
+
   }
 
   .Tooltip-Tip {

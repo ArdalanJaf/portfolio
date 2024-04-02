@@ -58,7 +58,7 @@ section {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     border-bottom: 2px solid;
   }
 }
@@ -71,7 +71,7 @@ header {
   margin: 0;
   z-index: 1;
   width: 100vw;
-  display: relative;
+  height: fit-content;
   .headerContainer {
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ header {
     margin: auto;
     border-top: solid 2px;
     // transition: transform 0.03s ease-in; in gloablStyles.js
-    box-shadow: rgb(0 0 0 / 40%) 1px 10px 15px;
+    box-shadow: rgb(0 0 0 / 15%) 5px 5px 15px;
     a {
       color: #000;
       text-decoration: none;
@@ -100,12 +100,10 @@ nav {
   display: none;
   .nav {
     display: inline-block;
-    transition: transform 0.1s ease-in-out;
+    transition: font-weight 0.04s ease-in-out;
+    // font-weight: 200;
     &:nth-of-type(n + 2) {
       margin-left: 10px;
-    }
-    &:hover {
-      transform: scale(0.95);
     }
   }
 }
@@ -157,7 +155,7 @@ header .hideHeader {
   border-radius: 6px;
   transition: transform 0.1s ease-in-out;
   transition: background-color 0.1s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.1s ease-in-out;
   .cvIcon {
     height: 100%;
     padding: 0 8px;
@@ -198,6 +196,7 @@ header .hideHeader {
   justify-content: center;
   border: none;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
   &:hover {
     transform: scale(0.9);
   }
@@ -277,7 +276,7 @@ header .hideHeader {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .projectImage {
@@ -485,9 +484,14 @@ footer {
     padding: 0 10%;
   }
 
-  .skillsListIcons svg {
-    width: 64px !important;
-    height: 64px !important;
+  .skillList {
+    .skillsListIcons {
+      // gap: 10px;
+      svg {
+        width: 64px !important;
+        height: 64px !important;
+      }
+    }
   }
 }
 
@@ -523,6 +527,15 @@ footer {
   p {
     padding: 0;
   }
+  // .skillList {
+  //   .skillsListIcons {
+  //     gap: 20px;
+  //     svg {
+  //       width: 64px !important;
+  //       height: 64px !important;
+  //     }
+  //   }
+  // }
 
   .project {
     margin-bottom: 7.5%;
