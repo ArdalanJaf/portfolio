@@ -31,7 +31,7 @@ function Intro() {
       <div>
         <h1>
           <span>{animatedName}</span> <br />
-          FRONT END <br />
+          FULL STACK <br />
           ENGINEER
         </h1>
         <div className="linkContainer">

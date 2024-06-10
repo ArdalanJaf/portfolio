@@ -10,7 +10,7 @@ function Skills() {
       {Object.keys(icons.skills).map((skillGroupKey => {
         return (
           <div className="skillList animateOnScroll fadeUp ">
-                        <h4>{skillGroupKey}</h4>
+                        <h3>{skillGroupKey}</h3>
           <div className="skillsListIcons">
           {Object.keys(icons.skills[skillGroupKey]).map((skill, index) => {
             return (

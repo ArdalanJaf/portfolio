@@ -56,20 +56,30 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 
-  .gitFrontSVG svg {
+  .projectLinks svg {
     fill: ${({ theme }) => theme.text};
   }
 
-  .gitFrontSVG svg:hover {
+   .projectLinks a {
+    color: ${({ theme }) => theme.text};
+  }
+
+  .projectLinks a:hover svg {
     fill: ${({ theme }) => theme.highlight};
   }
 
-  .gitBackSVG svg {
-    stroke: ${({ theme }) => theme.text};
+  .projectLinks a:hover {
+    color: ${({ theme }) => theme.highlight};
   }
 
-  .gitBackSVG svg:hover {
-    stroke: ${({ theme }) => theme.highlight}
+  .projectLinks a.gitBackSVG svg {
+    stroke: ${({ theme }) => theme.text};
+    fill: none;
+  }
+
+  .projectLinks a.gitBackSVG:hover svg {
+    stroke: ${({ theme }) => theme.highlight};
+    fill: none;
   }
 
 

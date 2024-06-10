@@ -9,13 +9,10 @@ function Contact() {
         <div className="contactText animateOnScroll fadeUp">
           {" "}
           <p>
-            If you have any questions about me, my projects, a project I can
-            build for you or even something else entirely, please send me a
+            If you have any questions please send me a
             message and I will get back to you shortly.
-          </p>
-          <p>
-            <br></br>
-            Alternatively, email me directly: <br></br>
+            <br></br>     <br></br>
+            Alternatively, email me directly: <br></br>     <br></br>
             <span>CONTACT@ARDALANJAF.COM</span>
           </p>
         </div>

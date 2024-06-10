@@ -11,12 +11,11 @@ function Project(props) {
       <>
         <div className="projectImage animateOnScroll fadeUp">
           <img src={image} alt={project.name} />
-          <a href={project.links.site} target="_blank" rel="noreferrer"></a>
+          {/* <a href={project.links.site} target="_blank" rel="noreferrer"></a> */}
         </div>
 
         <div className="projectInfo animateOnScroll fadeUp">
-        <h3><a href={project.links.site} target="_blank" rel="noreferrer">
- {project.name}</a></h3>
+        <h3>{project.name}</h3>
 
           {project.notes}
 
@@ -30,7 +29,8 @@ function Project(props) {
               rel="noreferrer"
               className="gitFrontSVG"
             >
-              <Tooltip content="git-repo">{icons.gitOctoCat}</Tooltip>
+             
+              <Tooltip content="View front-end git repository">{icons.gitOctoCat}  Front</Tooltip>
             </a>
             {project.links.gitBack && (
               <a
@@ -39,10 +39,24 @@ function Project(props) {
                 rel="noreferrer"
                 className="gitBackSVG"
               >
-                <Tooltip content="back-end git-repo">
-                  {icons.gitOctoCat}
+                
+                <Tooltip content="View back-end git repository">
+                  {icons.gitOctoCat} Back
                 </Tooltip>
               </a>
+            )}
+            {project.links.site && (
+                       <a
+                       href={project.links.site}
+                       target="_blank"
+                       rel="noreferrer"
+                       className="liveSiteSVG"
+                     >
+              <Tooltip content="View deployed site">
+                       
+                         {icons.liveSite} Site
+                       </Tooltip>
+                     </a>
             )}
           </div>
         </div>

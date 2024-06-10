@@ -135,16 +135,14 @@ header .hideHeader {
 }
 
 .links a svg,
-.gitFrontSVG svg,
-.gitBackSVG svg,
-.links .cv:hover {
+.projectLinks a,
+.links .cv {
   transition: all 0.1s ease-in-out;
 }
 
+// .projectLinks a:hover,
 .links a svg:hover,
-.gitFrontSVG svg:hover,
-.links .cv:hover,
-.gitBackSVG svg:hover {
+.links .cv:hover {
   transform: scale(0.9);
 }
 
@@ -234,9 +232,9 @@ header .hideHeader {
 }
 
 .skillList {
-  h4 {
+  h3 {
     text-align: center;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
   }
 
   .skillsListIcons {
@@ -335,9 +333,18 @@ header .hideHeader {
   display: flex;
   justify-content: center;
   gap: 10px;
+  a div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
   svg {
     width: 35px;
     height: 35px;
+  }
+  .liveSiteSVG svg {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -366,8 +373,8 @@ header .hideHeader {
   }
 }
 
-.contact {
-  min-height: 90vh;
+.container > section:last-of-type {
+  min-height: 80vh;
 }
 
 .contactText {
@@ -431,7 +438,7 @@ header .hideHeader {
 .msgSentNotification {
   padding: 0;
   p {
-    background-color: #0263ff;
+    background-color: #24ff02;
     border-radius: 5px;
     margin: auto;
     padding: 10px;

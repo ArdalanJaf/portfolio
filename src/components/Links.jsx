@@ -5,7 +5,7 @@ import pdf from "../assets/CV - Ardalan Al-Jaf.pdf";
 import Toggle from "./darkMode/Toggler";
 import { useDarkMode } from "./darkMode/useDarkMode";
 
-function Links(props) {
+function Links({header}) {
   const [theme, themeToggler] = useDarkMode();
 
   return (
@@ -14,9 +14,9 @@ function Links(props) {
         href={pdf}
         target="_blank"
         rel="noreferrer"
-        className={props.header ? "cv cvShort" : "cv"}
+        className={header ? "cv cvShort" : "cv"}
       >
-        <span className="cvIcon">{props.header ? "CV" : "RESUME"}</span>
+        <span className="cvIcon">{header ? "CV" : "RESUME"}</span>
       </a>
       <a href="https://github.com/ArdalanJaf" target="_blank" rel="noreferrer">
         {icons.gitHub}
@@ -28,7 +28,7 @@ function Links(props) {
       >
         {icons.linkedIn}
       </a>
-      <a href="#contact"  rel="noreferrer">
+      <a href="mailto: contact@ardalanjaf.com">
         <Tooltip content="contact@ardalanjaf.com">{icons.email}</Tooltip>
       </a>
       <Toggle theme={theme} toggleTheme={themeToggler} />

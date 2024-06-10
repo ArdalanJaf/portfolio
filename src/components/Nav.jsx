@@ -42,9 +42,9 @@ function Header() {
       <a className="nav navAbout" href="#about">
         ABOUT
       </a>
-      <a className="nav navContact" href="#contact">
+      {/* <a className="nav navContact" href="#contact">
         CONTACT
-      </a>
+      </a> */}
     </nav>
   );
 }
