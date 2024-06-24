@@ -1,14 +1,13 @@
 import React from "react";
+import { ABOUT_IMG_URL } from "../config/assetUrls";
 
 function About() {
-  const image = require("../assets/IMG_4566.png");
-
   return (
     <section className="section about" id="about">
       <h2>ABOUT</h2>
       <div className="flexContainer">
         <div className="aboutImage animateOnScroll fadeUp">
-          <img src={image} alt="me!"></img>
+          <img src={ABOUT_IMG_URL} alt="portrait of Ardalan"/>
         </div>
         <div className="aboutText animateOnScroll fadeUp">
           <p>

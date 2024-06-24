@@ -1,17 +1,17 @@
 import React from "react";
 import { icons } from "../config/icons";
 import Tooltip from "./tooltip/Tooltip";
-import pdf from "../assets/CV - Ardalan Al-Jaf.pdf";
 import Toggle from "./darkMode/Toggler";
 import { useDarkMode } from "./darkMode/useDarkMode";
+import { CV_URL } from "../config/assetUrls";
+
 
 function Links({header}) {
   const [theme, themeToggler] = useDarkMode();
-
   return (
     <div className="links">
       <a
-        href={pdf}
+        href={CV_URL}
         target="_blank"
         rel="noreferrer"
         className={header ? "cv cvShort" : "cv"}

@@ -50,9 +50,10 @@ p {
 }
 
 section {
-  min-height: 100vh;
+  // min-height: 800px;
   width: 100%;
   padding: 5%;
+
   h2 {
     font-size: 25px;
     width: fit-content;
@@ -70,6 +71,7 @@ header {
   bottom: 0;
   margin: 0;
   z-index: 1;
+
   width: 100vw;
   height: fit-content;
   .headerContainer {
@@ -171,6 +173,8 @@ header .hideHeader {
   display: flex;
   align-items: center;
   position: relative;
+  height: 100vh;
+
   h1 {
     margin-bottom: 5px;
     line-height: 1;
@@ -220,15 +224,16 @@ header .hideHeader {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .skillsListsContainer {
   height: inherit;
-  max-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  gap: 30px;
 }
 
 .skillList {
@@ -259,7 +264,7 @@ header .hideHeader {
 .projects {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  // padding-bottom: 50px;
 }
 
 .projectContainer {
@@ -273,6 +278,7 @@ header .hideHeader {
   flex: none;
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 10%;
 }
@@ -373,10 +379,6 @@ header .hideHeader {
   }
 }
 
-.container > section:last-of-type {
-  min-height: 80vh;
-}
-
 .contactText {
   margin-bottom: 10%;
   display: flex;
@@ -451,9 +453,18 @@ header .hideHeader {
   max-height: 500px;
 }
 
+.about {
+  height: 90vh;
+  max-height: 1460px;
+  min-height: unset;
+}
+
 footer {
-  margin-top: 100px;
-  text-align: center;
+  max-height: 160px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   padding: 2.5%;
   font-size: 0.8em;
   opacity: 0.7;
@@ -461,6 +472,11 @@ footer {
 
 .Tooltip-Tip::before {
   content: none !important;
+}
+
+// incase mobile user has search bar at bottom of browser interface
+.arrows {
+  padding-bottom: 10%;
 }
 
 @media (min-width: 400px) {

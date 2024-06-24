@@ -121,10 +121,10 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.highlight};
   }
 
-  .projectImage:hover img {
-    filter: drop-shadow(0 0 0.15rem ${({ theme }) => theme.highlight});
-    transform: scale(1.005);
-  }
+  // .projectImage:hover img {
+  //   filter: drop-shadow(0 0 0.15rem ${({ theme }) => theme.highlight});
+  //   transform: scale(1.005);
+  // }
   
   
   .projectNotes a {

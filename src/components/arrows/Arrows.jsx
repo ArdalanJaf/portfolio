@@ -8,7 +8,7 @@ function Arrows() {
 
   function scrollTo(id) {
     let targetAnchor = document.getElementById(id);
-    targetAnchor.scrollIntoView();
+    window.scrollTo({ top: targetAnchor.offsetTop, behavior: 'smooth' })
   }
 
   return (
@@ -16,9 +16,10 @@ function Arrows() {
       className={
         scrollPosition.now < window.innerHeight * 0.1 ? "arrows" : "arrows hide"
       }
-      onClick={() => scrollTo("projects")}
+      onClick={() => scrollTo("skills")}
     >
       {icons.arrow}
+      {/* {icons.arrow} */}
     </div>
   );
 }
