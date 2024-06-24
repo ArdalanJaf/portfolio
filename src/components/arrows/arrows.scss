@@ -6,21 +6,28 @@
   position: absolute;
   bottom: 5%;
   left: 50%;
-  transform: translateX(-50%);
-  transition: opacity 0.3s ease-in-out;
+  // transform: translateX(-50%);
+  // transition: opacity 0.3s ease-in-out;
   height: 63px;
   cursor: pointer;
+  @media (max-width: 600px) {
+    // incase mobile user has search bar at bottom of browser interface
+    padding-bottom: 10%;
+  }
   svg {
     animation-name: pulse;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
-  &:hover svg {
-    animation-name: pointDown;
-    animation-duration: 1s;
-    // animation-iteration-count: infinite;
-    // animation-timing-function: ease-in-out;
+  &:hover {
+    padding-bottom: 0;
+    svg {
+      animation-name: pointDown;
+      animation-duration: 1s;
+      // animation-iteration-count: infinite;
+      // animation-timing-function: ease-in-out;
+    }
   }
 }
 
