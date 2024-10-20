@@ -4,6 +4,7 @@ import Tooltip from "./tooltip/Tooltip";
 import Toggle from "./darkMode/Toggler";
 import { useDarkMode } from "./darkMode/useDarkMode";
 import { CV_URL } from "../config/assetUrls";
+import CV from "../../public/Ardalan_Al-Jaf.pdf"
 
 
 function Links({header}) {
@@ -11,7 +12,8 @@ function Links({header}) {
   return (
     <div className="links">
       <a
-        href={CV_URL}
+        // href={CV_URL}
+        href="../../public/Ardalan_Al-Jaf.pdf"
         target="_blank"
         rel="noreferrer"
         className={header ? "cv cvShort" : "cv"}
