@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f71ec191.css",
-    "main.js": "/portfolio/static/js/main.3763c656.js",
+    "main.js": "/portfolio/static/js/main.9f41b174.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/IMG_4566-big long.jpg": "/portfolio/static/media/IMG_4566-big long.b3f02722e7c3eeb222a3.jpg",
     "static/media/IMG_4566-big.jpg": "/portfolio/static/media/IMG_4566-big.4ef4502eb66e368b84e9.jpg",
     "static/media/TAHOMABD.TTF": "/portfolio/static/media/TAHOMABD.85c2f3c38475e9ca1850.TTF",
+    "static/media/Ardalan_Al-Jaf.pdf": "/portfolio/static/media/Ardalan_Al-Jaf.a3431b72bfc3f4fa0090.pdf",
     "static/media/nowness.png": "/portfolio/static/media/nowness.a259a73afd2af7eab19d.png",
     "static/media/findsparks.png": "/portfolio/static/media/findsparks.cf0cd2acce6d9a0110fa.png",
     "static/media/klover.png": "/portfolio/static/media/klover.33024c52d82b78323b3d.png",
@@ -30,11 +31,11 @@
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.0c8de492d9a0095b09a5.png",
     "index.html": "/portfolio/index.html",
     "main.f71ec191.css.map": "/portfolio/static/css/main.f71ec191.css.map",
-    "main.3763c656.js.map": "/portfolio/static/js/main.3763c656.js.map",
+    "main.9f41b174.js.map": "/portfolio/static/js/main.9f41b174.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f71ec191.css",
-    "static/js/main.3763c656.js"
+    "static/js/main.9f41b174.js"
   ]
 }
