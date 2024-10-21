@@ -6,9 +6,9 @@ function About() {
     <section className="section about" id="about">
       <h2>ABOUT</h2>
       <div className="flexContainer">
-        <div className="aboutImage animateOnScroll fadeUp">
+        {/* <div className="aboutImage animateOnScroll fadeUp">
           <img src={ABOUT_IMG_URL} alt="portrait of Ardalan"/>
-        </div>
+        </div> */}
         <div className="aboutText animateOnScroll fadeUp">
           <p>
             I'm <span>Ardalan Al-Jaf</span>, a full-stack software engineer from London.
