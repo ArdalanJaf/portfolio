@@ -11,19 +11,19 @@ function About() {
         </div> */}
         <div className="aboutText animateOnScroll fadeUp">
           <p>
-            I'm <span>Ardalan Al-Jaf</span>, a full-stack software engineer from London.
+            Hi! I'm a full-stack software engineer from London.
           </p>
           <br></br>
           <p>
-            I'm a <span>commited</span> and <span>empathetic</span>{" "}
-            collaborator, bringing over a decade of diverse experience in{" "}
-            <span>learning</span>, <span>communication</span> and{" "}
-            <span>problem-solving</span> to software-engineering.
+            I'm a <span>commited</span>
+            collaborator and <span>tenacious</span> problem-solver, bringing over a decade of diverse experience in{" "}
+            <span>learning</span>, <span>communication</span> and{" "}a
+            <span>goals-centered</span> approach to software-engineering.
           </p>
           <br></br>
           <p>
             Outside of coding, I enjoy traveling,
-            exercise, drawing and building with my hands.
+            exercise, drawing and a healthy amount of nerdy hobbies.
           </p>
         </div>
       </div>
