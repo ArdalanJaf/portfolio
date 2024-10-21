@@ -1,5 +1,5 @@
 import React from "react";
-import { ABOUT_IMG_URL } from "../config/assetUrls";
+// import { ABOUT_IMG_URL } from "../config/assetUrls";
 
 function About() {
   return (
