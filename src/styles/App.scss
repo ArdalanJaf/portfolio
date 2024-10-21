@@ -580,8 +580,12 @@ footer {
     margin: 0;
   }
 
-  .aboutText p {
-    text-align: left;
+  .aboutText {
+    margin: auto;
+    max-width: 650px;
+    p {
+      text-align: center;
+    }
   }
 
   .flexContainer {
