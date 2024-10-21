@@ -581,9 +581,11 @@ footer {
   }
 
   .aboutText {
-    margin: auto;
+    // remove if you add photo
+    margin: auto !important;
     max-width: 650px;
     p {
+      // make left align if you add photo
       text-align: center;
     }
   }
