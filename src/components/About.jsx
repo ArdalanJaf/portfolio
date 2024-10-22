@@ -15,15 +15,14 @@ function About() {
           </p>
           <br></br>
           <p>
-            I'm a <span>commited</span>
-            collaborator and <span>tenacious</span> problem-solver, bringing over a decade of diverse experience in{" "}
-            <span>learning</span>, <span>communication</span> and{" "}a
+            I'm a <span>commited</span> collaborator and <span>tenacious</span> problem-solver, bringing over a decade of diverse experience in{" "}
+            <span>learning</span>, <span>communication</span> and{" "}a{" "}
             <span>goals-centered</span> approach to software-engineering.
           </p>
           <br></br>
           <p>
             Outside of coding, I enjoy traveling,
-            exercise, drawing and a healthy amount of nerdy hobbies.
+            exercise, drawing and working with my hands.
           </p>
         </div>
       </div>
