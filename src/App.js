@@ -40,7 +40,7 @@ function App() {
           <About />
           {/* <Contact /> */}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </ThemeProvider>
   );

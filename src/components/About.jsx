@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 // import { ABOUT_IMG_URL } from "../config/assetUrls";
 
 function About() {
@@ -26,6 +27,7 @@ function About() {
           </p>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 }
